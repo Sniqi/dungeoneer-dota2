@@ -1,0 +1,57 @@
+#base "abilities_encounters/a_mighty_boar_abilities.txt"
+#base "abilities_encounters/demonic_warrior_abilities.txt"
+#base "abilities_encounters/scroll_collector_abilities.txt"
+#base "abilities_encounters/ancient_siege_engine_abilities.txt"
+#base "abilities_encounters/wind_harpy_abilities.txt"
+#base "abilities_encounters/air_ship_abilities.txt"
+#base "abilities_encounters/lunar_horse_abilities.txt"
+
+#base "abilities_encounters/ferocious_lava_elemental_abilities.txt"
+#base "abilities_encounters/iron_claw_abilities.txt"
+#base "abilities_encounters/smodhex_satyr_warlock_abilities.txt"
+#base "abilities_encounters/nether_drake_abilities.txt"
+#base "abilities_encounters/drono_red_dragonkin_commander_abilities.txt"
+#base "abilities_encounters/stikx_the_gentleman_abilities.txt"
+#base "abilities_encounters/treasure_on_a_tree_abilities.txt"
+#base "abilities_encounters/structures_of_xunra_abilities.txt"
+#base "abilities_encounters/samurai_of_chaos_abilities.txt"
+#base "abilities_encounters/elite_royal_guardian_abilities.txt"
+
+#base "abilities_encounters/bhamuka_all_consuming_god_abilities.txt"
+#base "abilities_encounters/the_curse_of_agony_abilities.txt"
+#base "abilities_encounters/the_dungeoneer_abilities.txt"
+#base "abilities_encounters/sinastra_abilities.txt"
+#base "abilities_encounters/deathspeaker_xunra_abilities.txt"
+
+
+"DOTAAbilities"
+{
+  "artifact_ability"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	//"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "artifact"
+    "ScriptFile"            "perks/artifact_ability"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "0"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       "0"
+	//"AbilityCastRangeBuffer" "0"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              "0"
+
+  }
+}

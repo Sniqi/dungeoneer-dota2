@@ -1,0 +1,15 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Jakiro
+  //=================================================================================================================
+  "npc_dota_hero_jakiro"
+  {
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+    "Ability14"   "special_bonus_intelligence_20" // replaces -60 Liquid Fire Attack Speed
+    "Ability15"   "special_bonus_movement_speed_35" // replaces +150 Gold/Min
+    "Ability16"   "special_bonus_attack_speed_120" // replaces Macropyre Pure and Pierces Immunity
+    "Ability17"   "special_bonus_cooldown_reduction_20" // replaces +1.25s Ice Path Duration
+  }
+}

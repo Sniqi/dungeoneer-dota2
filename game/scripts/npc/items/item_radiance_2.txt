@@ -1,0 +1,84 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Radiance 2
+  //=================================================================================================================
+  "item_recipe_radiance_2"
+  {
+    "ID"                                                  "2615"  // unique ID
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemCost"                                            "3875"
+    "ItemShopTags"                                        ""
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_radiance_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_radiance"
+    }
+  }
+
+  //=================================================================================================================
+  // Radiance 2
+  //=================================================================================================================
+  "item_radiance_2"
+  {
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"2616"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"BaseClass"                     "item_radiance"
+		"AbilityTextureName"            "item_radiance"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+		"AbilityCastRange" 				"700"
+
+		// Upgrade Info
+		//-------------------------------------------------------------------------------------------------------------
+		"MaxUpgradeLevel"                                     "3"
+		"ItemBaseLevel"                                       "2"
+		"UpgradesItems"                                       "item_radiance;item_radiance_2;item_radiance_3"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"9025"
+		"ItemShopTags"					"damage"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"radiance"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"65 97 130"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_damage"			"60 90 120"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_damage_illusions"	"35 53 70"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blind_pct"				"17 19 21"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"700 750 800"
+			}
+		}
+  }
+}

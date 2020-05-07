@@ -1,0 +1,10 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Ability: Juggernaut Omni Slash
+  //=================================================================================================================
+  "juggernaut_omni_slash"
+  {
+    "AbilityUnitTargetFlags"    "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS | DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE"
+  }
+}

@@ -1,0 +1,53 @@
+"DOTAItems"
+{
+	//=================================================================================================================
+	// Ancient Book of Proficiency
+	//=================================================================================================================
+	"item_ancient_book_of_proficiency"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"3015"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_ancient_book_of_proficiency"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"			"item_ancient_book_of_proficiency"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		"ItemCost"						"3500"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemAliases"					"ancient book of proficiency"
+		//"ItemStackable"					"1"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		//"ItemCastOnPickup"				"1"
+		//"ItemInitialCharges"			"1"
+		//"ItemDisplayCharges"			"1"
+		//"ItemStockMax"					"1"
+		//"ItemStockInitial"				"0"
+		//"ItemStockTime"					"1"
+		//"ItemInitialStockTime"			"0"//"600"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		//"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ShouldBeSuggested"				"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_all_stats"		"5"
+			}
+		}
+	}
+
+}

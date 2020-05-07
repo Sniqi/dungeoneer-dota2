@@ -1,0 +1,35 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Ability: Spirit Bear Entangling Claws
+  //=================================================================================================================
+  "lone_druid_spirit_bear_entangle"
+  {
+    // Damage.
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityDamage"         "60 160 260 360"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "entangle_chance"   "10"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "hero_duration"     "0.25"
+//        "LinkedSpecialBonus"  "special_bonus_unique_lone_druid_3"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "creep_duration"    "0.25"
+//        "LinkedSpecialBonus"  "special_bonus_unique_lone_druid_3"
+      }
+    }
+  }
+}

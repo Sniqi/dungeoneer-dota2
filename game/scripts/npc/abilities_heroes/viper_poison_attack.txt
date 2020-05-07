@@ -1,0 +1,26 @@
+"DOTAAbilities"
+{
+"viper_poison_attack"
+  {
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "02"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "damage"            "5 10 15 20"
+      }
+      "03"
+      {
+        "var_type"            "FIELD_INTEGER"
+        "movement_speed"      "1 2 2 3"
+      }
+      "04"
+      {
+        "var_type"            "FIELD_INTEGER"
+        "magic_resistance"      "1 1 2 2"
+      }
+    }
+  }
+}

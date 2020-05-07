@@ -1,0 +1,333 @@
+"DOTAAbilities"
+{
+  "elite_royal_guardian_icy_cleave"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "abaddon_frostmourne"
+    "ScriptFile"            "encounters/elite_royal_guardian/elite_royal_guardian_icy_cleave"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "7.5"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "420"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "420"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "8 9 10"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.0"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "attack_speed_constant"   "-300.0"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "move_speed_percentage"   "-25.0"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_max_hp_percentage"   "35 40 45"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_min_hp_percentage"   "70 80 90"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "cooldown_max_hp"   "7.5"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "cooldown_min_hp"   "3.75"
+        }
+
+    }
+  }
+
+
+  "elite_royal_guardian_linked_pillars_of_frost"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "tusk_frozen_sigil"
+    "ScriptFile"            "encounters/elite_royal_guardian/elite_royal_guardian_linked_pillars_of_frost"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "11"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "75"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "75"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "15"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.0 1.8 1.6"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "count"   "4"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "interval_max_hp"   "4"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "interval_min_hp"   "0.5"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_max_hp_percentage"   "20 24 28"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_min_hp_percentage"   "40 48 56"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed_max_hp"   "120"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed_min_hp"   "360"
+        }
+
+    }
+  }
+
+
+  "elite_royal_guardian_eternal_ice"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "lich_frost_nova"
+    "ScriptFile"            "encounters/elite_royal_guardian/elite_royal_guardian_eternal_ice"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "0"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "500"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "500"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "8 10 12"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "interval"   "0.1"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "radius_increase"   "1"
+        }
+
+    }
+  }
+
+
+  "elite_royal_guardian_frozen_kick"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "ancient_apparition_cold_feet"
+    "ScriptFile"            "encounters/elite_royal_guardian/elite_royal_guardian_frozen_kick"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "16"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "20 24"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.0"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_force"   "3600"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "move_speed_absolute"   "1250"
+        }
+
+    }
+  }
+
+
+  "elite_royal_guardian_freezing_tempest"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "ancient_apparition_chilling_touch"
+    "ScriptFile"            "encounters/elite_royal_guardian/elite_royal_guardian_freezing_tempest"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "36"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "700"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "700"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "duration"   "8.0"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "160 180 200"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.0"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "move_speed_percentage"   "-50.0 -55.0 -60.0"
+        }
+
+    }
+  }
+
+
+}

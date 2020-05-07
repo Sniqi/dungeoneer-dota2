@@ -1,0 +1,77 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Butterfly 3
+  //=================================================================================================================
+  "item_recipe_butterfly_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2514"      // unique ID
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemShopTags"                                        ""
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_butterfly_3"
+    "ItemCost"                                            "4125"
+    "ItemRequirements"
+    {
+      "01"                                                "item_butterfly_2"
+    }
+  }
+
+  //=================================================================================================================
+  // Butterfly 3
+  //=================================================================================================================
+  "item_butterfly_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2515"      // unique ID
+    "BaseClass"                                           "item_butterfly"
+    "AbilityBehavior"                                   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    //"AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityTextureName"                                  "item_butterfly"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "13725"
+    "ItemShopTags"                                        "agi;damage;evasion;attack_speed"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "bfly 3;butterfly 3"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+    "UpgradesItems"                                       "item_butterfly;item_butterfly_2;item_butterfly_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_agility"     "35 53 70"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_damage"      "25 38 50"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_evasion"     "8 12 16"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_attack_speed"  "30 45 60"
+      }
+    }
+  }
+}

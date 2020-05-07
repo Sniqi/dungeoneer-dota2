@@ -1,0 +1,319 @@
+"DOTAAbilities"
+{
+  "lunar_horse_lunar_beam"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "dark_seer_surge"
+    "ScriptFile"            "encounters/lunar_horse/lunar_horse_lunar_beam"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "20"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "175"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "175"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "duration"   "3.0"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "40 46"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.06"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.0"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "range"   "3600"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "turn_speed_max_hp"   "1"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "turn_speed_min_hp"   "4"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "move_speed_absolute"   "1000"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "turn_rate_percentage"   "-100.0"
+        }
+
+    }
+  }
+
+
+  "lunar_horse_waning_moon"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "lich_sinister_gaze"
+    "ScriptFile"            "encounters/lunar_horse/lunar_horse_waning_moon"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "12"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "800"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "800"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "40"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "4.0 3.0"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "steps"   "10"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_percentage"   "65"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_slow_percentage"   "40"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_duration"   "8"
+        }
+
+    }
+  }
+
+
+  "lunar_horse_lunar_strike"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "mirana_starfall"
+    "ScriptFile"            "encounters/lunar_horse/lunar_horse_lunar_strike"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "6"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "300"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "300"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "25"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "32 36"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "1.2"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "5.0"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "stun"   "0.4"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_percentage"   "80"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_move_step"   "30"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_three_percentage"   "40"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_three_move_step"   "90"
+        }
+
+    }
+  }
+
+
+  "lunar_horse_eclipse"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	//"AbilityUnitDamageType"  ""
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "luna_eclipse"
+    "ScriptFile"            "encounters/lunar_horse/lunar_horse_eclipse"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "1000"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "15"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "first_orb_percentage"   "80"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "second_orb_percentage"   "50"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "move_distance_min"   "600 700"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "move_distance_max"   "1000 1100"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "move_time"   "6"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "hero_move_speed_percentage"   "-24.0"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "incoming_damage_percentage"   "64.0"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "boss_move_speed_percentage"   "-64.0"
+        }
+
+    }
+  }
+
+
+}

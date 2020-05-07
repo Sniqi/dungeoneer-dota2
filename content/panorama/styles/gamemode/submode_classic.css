@@ -1,0 +1,256 @@
+.SubMode_ClassicPickerRoot
+{
+	width: 800px;
+	height: 400px;
+	
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+#Background
+{
+	width: 100%;
+	height: 100%;
+
+	z-index: -99;
+}
+
+/* SubMode_Classic Picker Snippet */
+
+#SubMode_Classics
+{
+	width: 100%;
+	height: 100%;
+
+	border: 2px solid black;
+	/*background-color: gradient( linear, 0% 0%, 0% 100%, from( #fbfbfbff ), to( #c0c0c0c0 ) );*/
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+	
+	z-index: 0;
+}
+
+
+#SubMode_ClassicCaption
+{
+	color: white;
+	font-size: 50px;
+	horizontal-align: center;
+	margin-top: 25px;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+/* SubMode_Classic Button Snippet 
+
+flow-children: right;
+*/
+
+
+#SubMode_ClassicLabel
+{
+	color: white;
+	font-size: 25px;
+	margin-top: 95px;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#Timer
+{
+	color: white;
+	font-size: 35px;
+	margin-left: 25px;
+	margin-bottom: 20px;
+	horizontal-align: left;
+	vertical-align: bottom;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+
+/* ButtonLock */
+
+#ButtonLock {
+ 	width: 200px;
+ 	height: 50px;
+	horizontal-align: center;
+	vertical-align: bottom;
+
+	margin-bottom: 20px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonLockText {
+	color: white;
+	font-size: 25px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonLock:hover {
+	border: 1px solid #fff;
+}
+#ButtonLock:active {
+ 	border: 3px solid #fff;
+}
+
+/* ButtonLock End */
+
+
+
+#ToggleCasual {
+	vertical-align: top;
+	horizontal-align: center;
+
+	margin-top: 100px;
+	margin-left: -100px;
+}
+
+#ToggleCasualText {
+	color: white;
+	font-size: 25px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ToggleEndless {
+	vertical-align: top;
+	horizontal-align: center;
+
+	margin-top: 100px;
+	margin-left: 200px;
+}
+
+#ToggleEndlessText {
+	color: white;
+	font-size: 25px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#DifficultyDescriptionText {
+	color: white;
+	font-size: 40px;
+	vertical-align: top;
+	horizontal-align: center;
+
+	margin-top: 180px;
+	margin-left: 0px;
+
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#DifficultyText {
+	color: white;
+	font-size: 50px;
+	vertical-align: top;
+	horizontal-align: center;
+
+	margin-top: 230px;
+	margin-left: 0px;
+
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+
+/* ButtonIncreaseDifficulty */
+
+#ButtonIncreaseDifficulty {
+ 	width: 50px;
+ 	height: 50px;
+	horizontal-align: center;
+	vertical-align: top;
+
+	margin-top: 235px;
+	margin-left: 150px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonIncreaseDifficultyText {
+	color: white;
+	font-size: 30px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonIncreaseDifficulty:hover {
+	border: 1px solid #fff;
+}
+#ButtonIncreaseDifficulty:active {
+ 	border: 3px solid #fff;
+}
+
+/* ButtonIncreaseDifficulty End */
+
+
+/* ButtonDecreaseDifficulty */
+
+#ButtonDecreaseDifficulty {
+ 	width: 50px;
+ 	height: 50px;
+	horizontal-align: center;
+	vertical-align: top;
+
+	margin-top: 235px;
+	margin-left: -75px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonDecreaseDifficultyText {
+	color: white;
+	font-size: 30px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonDecreaseDifficulty:hover {
+	border: 1px solid #fff;
+}
+#ButtonDecreaseDifficulty:active {
+ 	border: 3px solid #fff;
+}
+
+/* ButtonDecreaseDifficulty End */
+
+
+#OtherPlayersText {
+	color: white;
+	font-size: 20px;
+	vertical-align: top;
+	horizontal-align: center;
+
+	margin-top: 5px;
+	margin-left: 0px;
+
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#Help
+{
+	width: 32px;
+	height: 32px;
+	
+	vertical-align: center;
+	horizontal-align: center;
+
+	margin-top: 10px;
+	margin-left: 360px;
+}

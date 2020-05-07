@@ -1,0 +1,363 @@
+"DOTAAbilities"
+{
+  "the_curse_of_agony_banish"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	//"AbilityUnitDamageType"  ""
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "dark_willow_terrorize"
+    "ScriptFile"            "encounters/the_curse_of_agony/the_curse_of_agony_banish"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "0"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "250"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "250"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "9"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "5"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "interval"   "26"
+        }
+
+    }
+  }
+
+
+  "the_curse_of_agony_shadow_cleave"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "enigma_midnight_pulse"
+    "ScriptFile"            "encounters/the_curse_of_agony/the_curse_of_agony_shadow_cleave"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "7"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "1500"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "100"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "1500"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "100"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "60"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.0"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed"   "1600"
+        }
+
+    }
+  }
+
+
+  "the_curse_of_agony_tick_tock"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "faceless_void_time_lock"
+    "ScriptFile"            "encounters/the_curse_of_agony/the_curse_of_agony_tick_tock"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "24"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "2000"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "100"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "2000"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "100"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "12"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "45"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_duration"   "12"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.2"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_instances"   "60"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "3"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed"   "900"
+        }
+
+    }
+  }
+
+
+  "the_curse_of_agony_everlasting_curse"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "nevermore_dark_lord"
+    "ScriptFile"            "encounters/the_curse_of_agony/the_curse_of_agony_everlasting_curse"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "30"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "380"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "380"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "18"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "45"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_duration"   "24"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.5"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_instances"   "48"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "3"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "curse_interval"   "6"
+        }
+
+    }
+  }
+
+
+  "the_curse_of_agony_curse_or_get_worse"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	//"AbilityUnitDamageType"  ""
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "chaos_knight_chaos_strike"
+    "ScriptFile"            "encounters/the_curse_of_agony/the_curse_of_agony_curse_or_get_worse"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "26"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "100"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "100"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "10"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "5"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "curse_duration"   "10"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "buff_attack_damage_percentage"   "25"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "buff_spell_amplify_percentage"   "125"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "buff_base_attack_time_constant"   "1.25"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "buff_move_speed_constant"   "550"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "buff_incoming_damage_percentage"   "50"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "debuff_attack_damage_percentage"   "-50.0"
+        }
+        "11"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "debuff_spell_amplify_percentage"   "-50.0"
+        }
+        "12"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "debuff_incoming_damage_percentage"   "50"
+        }
+
+    }
+  }
+
+
+}

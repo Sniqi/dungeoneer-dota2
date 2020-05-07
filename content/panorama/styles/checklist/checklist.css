@@ -1,0 +1,90 @@
+.ChecklistPickerRoot
+{
+    width: 100%;
+    height: 100%;
+}
+
+#Checklists
+{
+    width: 100%;
+    height: 100%;
+}
+
+#ChecklistBoxs
+{
+    width: 400px;
+    height: 500px;
+
+    margin-top: 475px;
+    margin-left: 0px;
+
+    horizontal-align: left;
+    vertical-align: top;
+
+    flow-children: down;
+}
+
+.ChecklistBox
+{
+    vertical-align: top;
+}
+
+#ChecklistBoxBackground
+{
+    width: 300px;
+    height: 55px;
+    background-color: black;
+    opacity: 0.8;
+
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+#ChecklistBoxBackground Label
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #dadada;
+}
+
+#ChecklistPicture
+{
+    width: 48px;
+    height: 48px;
+    
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+#ChecklistCheckmarkPicture
+{
+    width: 30px;
+    height: 30px;
+    
+    margin-bottom: 2px;
+    margin-right: 2px;
+
+    vertical-align: bottom;
+    horizontal-align: right;
+}
+
+#ChecklistTxt
+{
+    margin-top: 6px;
+    margin-left: 60px;
+    text-align: left;
+    color: white;
+}
+
+#ChecklistValueAdjustment
+{
+    margin-top: 0px;
+    margin-left: 330px;
+    text-align: left;
+	color: white;
+	
+	font-size: 32px;
+    font-weight: bold;
+
+    z-index: 100;
+}

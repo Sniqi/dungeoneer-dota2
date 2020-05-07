@@ -1,0 +1,19 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Enchantress
+  //=================================================================================================================
+  "npc_dota_hero_enchantress"
+  {
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+	//"Ability10"		"special_bonus_magic_resistance_15"		// Lvl 10, right - replaces xxx
+	//"Ability11"		"special_bonus_movement_speed_20"		// Lvl 10, left - replaces xxx
+	//"Ability12"		"special_bonus_attack_damage_50"		// Lvl 15, right - replaces xxx
+	//"Ability13"		"special_bonus_unique_enchantress_2"	// Lvl 15, left - replaces xxx
+	//"Ability14"		"special_bonus_unique_enchantress_3"	// Lvl 20, right - replaces xxx
+	"Ability15"		"special_bonus_all_stats_20"	// Lvl 20, left - replaces special_bonus_unique_enchantress_1 Enchant Affects Ancients
+	//"Ability16"		"special_bonus_unique_enchantress_4"	// Lvl 25, right - replaces xxx
+	//"Ability17"		"special_bonus_unique_enchantress_5"	// Lvl 25, left - replaces xxx
+  }
+}

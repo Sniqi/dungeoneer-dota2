@@ -1,0 +1,133 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Battlefury 3
+  //=================================================================================================================
+  "item_recipe_bfury_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2582"                            // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "3300"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_bfury_3"
+    "ItemRequirements"
+    {
+      "01"                                                "item_bfury_2"
+    }
+  }
+
+  //=================================================================================================================
+  // Battlefury 3
+  //=================================================================================================================
+  "item_bfury_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2619"                                                       // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                                           "item_bfury"
+    "AbilityTextureName"                                  "item_bfury"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetType"     "DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
+    "AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_CUSTOM"
+    "AbilityCastRange"          "350"
+    "AbilityCastPoint"          "0.0"
+    "AbilityCooldown"           "4.0"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "11000"
+    "ItemShopTags"                                        "damage;str;agi;attack_speed;unique"
+    "ItemQuality"                                         "artifact"
+    "ItemAliases"                                         "bf 3;battle fury 3"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_ALWAYS"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "ShouldBeSuggested"                                   "1"
+
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+    "UpgradesItems"                                       "item_bfury;item_bfury_2;item_bfury_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_damage"      "54 81 108"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "bonus_health_regen"  "7.5 11.25 15.0"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "bonus_mana_regen"    "3.75 5.62 7.50"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cleave_damage_percent" "60 65 70"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "quelling_bonus"      "0"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "quelling_bonus_ranged" "0"
+      }     
+      "07"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cleave_starting_width"     "150"
+      }     
+      "08"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cleave_ending_width"     "360"
+      }     
+      "09"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cleave_distance"     "650"
+      }
+      "10"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cast_range_tooltip"      "350"
+      }
+      "11"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cast_range_ward"     "450"
+      }
+      "12"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "tooltip_quelling_bonus"  "0"
+      }
+      "13"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "tooltip_quelling_bonus_ranged" "0"
+      }
+    }
+  }
+}

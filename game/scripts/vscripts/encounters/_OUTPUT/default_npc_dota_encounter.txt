@@ -1,0 +1,92 @@
+"DOTAHeroes"
+{
+  "%npc_dota_hero_heroname%"
+  {
+    "BaseClass"       "%npc_dota_hero_overrideheroname%"
+	"HeroID"          "%HeroID%"
+	
+	"Model"           "%Model%"
+    "ModelScale"      "%ModelScale%"
+
+	"AbilityLayout"   "%AbilityLayout%"
+
+    "Ability1"        "%Ability1%"
+    "Ability2"        "%Ability2%"
+    "Ability3"        "%Ability3%"
+    "Ability4"        "%Ability4%"
+    "Ability5"        "%Ability5%"
+    "Ability6"        "%Ability6%"
+    "Ability7"        "%Ability7%"
+    "Ability8"        "%Ability8%"
+    "Ability9"        "%Ability9%"
+    "Ability10"       "%Ability10%"
+    "Ability11"       "%Ability11%"
+    "Ability12"       "%Ability12%"
+    "Ability13"       "%Ability13%"
+    "Ability14"       "%Ability14%"
+    "Ability15"       "%Ability15%"
+    "Ability16"       "%Ability16%"
+    "Ability17"       "%Ability17%"
+    "Ability18"       "%Ability18%"
+    "Ability19"       "%Ability19%"
+    "Ability20"       "%Ability20%"
+    "Ability21"       "%Ability21%"
+    "Ability22"       "%Ability22%"
+    "Ability23"       "%Ability23%"
+
+    "ArmorPhysical"       "%ArmorPhysical%"          // Physical protection.
+    "MagicalResistance"   "%MagicalResistance%"      // Magical protection (percentage).
+	
+    "AttackCapabilities"  "%AttackCapabilities%"
+    "AttackDamageMin"     "%AttackDamageMin%"        // Damage range min.
+    "AttackDamageMax"     "%AttackDamageMax%"        // Damage range max.
+	"AttackRange"         "%AttackRange%"
+    "AttackDamageType"    "DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"          "%AttackRate%"
+    "AttackSpeedActivityModifiers"
+    {
+      "fast"    "170"
+      "faster"  "275"
+      "fastest" "350"
+    }
+	
+    %ProjectileModel_Block%"ProjectileModel" "%ProjectileModel%"
+    %ProjectileSpeed_Block%"ProjectileSpeed" "%ProjectileSpeed%"
+    %SoundSet_Block%"SoundSet"        "%SoundSet%"
+	
+    "AttributePrimary"          "%AttributePrimary%"
+    "AttributeBaseStrength"     "%AttributeBaseStrength%"                   // Base strength
+    "AttributeStrengthGain"     "%AttributeStrengthGain%"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "%AttributeBaseIntelligence%"                   // Base intelligence
+    "AttributeIntelligenceGain" "%AttributeIntelligenceGain%"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"      "%AttributeBaseAgility%"                   // Base agility
+    "AttributeAgilityGain"      "%AttributeAgilityGain%"                   // Agility bonus per level.
+
+    "BountyXP"            "%BountyXP%"                 // Experience earn.
+    "BountyGoldMin"       "%BountyGoldMin%"                 // Gold earned min.
+    "BountyGoldMax"       "%BountyGoldMax%"                 // Gold earned max.
+
+    "BoundsHullName"            "DOTA_HULL_SIZE_HUGE"
+    "ProjectileCollisionSize"   "100"
+    "RingRadius"                "100"
+    "HealthBarOffset"           "260"
+
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"         "%MovementSpeed%"              // Speed.
+    "MovementTurnRate"      "%MovementTurnRate%"           // Turning rate.
+
+    "StatusHealth"          "%StatusHealth%"               // Base health.
+    "StatusHealthRegen"     "%StatusHealthRegen%"          // Health regeneration rate.
+    "StatusMana"            "%StatusMana%"                 // Base mana.
+    "StatusManaRegen"       "%StatusManaRegen%"            // Mana regeneration rate.
+	
+    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+    "UnitRelationshipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+    "HasInventory"          "1"
+
+    "AttackAcquisitionRange"   "5000"              // Range within a target can be acquired.
+    "VisionDaytimeRange"       "2000"              // Range of vision at night time.
+    "VisionNighttimeRange"     "2000"              // Range of vision at night time.
+  }
+}

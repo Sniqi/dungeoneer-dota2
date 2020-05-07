@@ -1,0 +1,180 @@
+.ActivePerksPickerRoot
+{
+	width: 100%;
+	height: 100%;
+}
+
+/* ActivePerks Picker Snippet */
+
+#ActivePerkss
+{
+	width: 100%;
+	height: 100%;
+}
+
+.ActivePerksPicker
+{
+
+}
+
+#ActivePerksList
+{
+
+}
+
+#ActivePerksListCaption
+{
+	color: white;
+	font-size: 50px;
+	horizontal-align: center;
+	margin-top: 0px;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+/* ActivePerks Button Snippet 
+
+flow-children: right;
+*/
+
+#ActivePerksButtons
+{
+	width: 550px;
+	height: 78px;
+
+	margin-left: 5px;
+	margin-bottom: 5px;
+	
+	horizontal-align: left;
+	vertical-align: bottom;
+	
+	z-index: 0;
+
+	border: 2px solid black;
+	/*background-color: gradient( linear, 0% 0%, 0% 100%, from( #fbfbfbff ), to( #c0c0c0c0 ) );*/
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+
+	z-index: 1;
+}
+
+.ActivePerksButton
+{
+	z-index: 2;
+}
+
+#ActivePerksLabel
+{
+	color: red;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px 5.0 #ffffffb0;
+
+	margin-bottom: 2px;
+
+	horizontal-align: center;
+	vertical-align: bottom;
+
+	z-index: 3;
+}
+
+#ActivePerksPicture
+{
+	width: 64px;
+	height: 64px;
+	
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+
+	border: 2px solid black;
+	border-radius: 75% / 75%;
+	/*background-color: gradient( radial, 50% 50%, 0% 0%, 80% 80%, from( #ff5555ff ), to( #c5c5c5ff ) );*/
+	background-color: gradient( linear, 0% 0%, 100% 50%, from( #fbfbfbff ), to( #888888ff ) );
+	/*box-shadow: fill #000000FF 5px 5px 8px 0px;*/
+}
+
+#ActivePerksPicture:hover
+{
+	/*box-shadow: #FFFFFF80 0px 0px 10px 0px;*/
+	border: 1px solid white;
+}
+/*
+#ActivePerksPicture:active
+{
+	border: 3px solid white;
+}
+*/
+.ActivePerksPictureDisabled
+{
+	opacity: 0.75;
+}
+
+
+
+#ActivePerksAbilityButtons
+{
+	width: 256px;
+	height: 128px;
+
+	margin-left: 24%;
+	margin-bottom: 9%;
+	
+	horizontal-align: left;
+	vertical-align: bottom;
+
+	/*border: 2px solid black;*/
+	/*background-color: gradient( linear, 0% 0%, 0% 100%, from( #fbfbfbff ), to( #c0c0c0c0 ) );*/
+	/*box-shadow: fill #00000080 2px 2px 8px 0px;*/
+
+	z-index: 0;
+}
+
+.ActivePerksAbilityButton
+{
+	z-index: 2;
+}
+
+#ActivePerksAbilityLabel
+{
+	color: grey;
+	font-size: 48px;
+	text-shadow: 1px 1px 1px 5.0 #000000b0;
+
+	horizontal-align: center;
+	vertical-align: center;
+
+	z-index: 3;
+}
+
+#ActivePerksAbilityPicture
+{
+	width: 96px;
+	height: 96px;
+	
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+
+	border: 2px solid black;
+	border-radius: 25% / 25%;
+	/*background-color: gradient( radial, 50% 50%, 0% 0%, 80% 80%, from( #ff5555ff ), to( #c5c5c5ff ) );*/
+	background-color: gradient( linear, 0% 0%, 100% 50%, from( #fbfbfbff ), to( #888888ff ) );
+	/*box-shadow: fill #000000FF 5px 5px 8px 0px;*/
+}
+
+#ActivePerksAbilityPicture:hover
+{
+	/*box-shadow: #FFFFFF80 0px 0px 10px 0px;*/
+	border: 1px solid white;
+}
+/*
+#ActivePerksPicture:active
+{
+	border: 3px solid white;
+}
+*/
+.ActivePerksAbilityPictureDisabled
+{
+	opacity: 0.75;
+}

@@ -1,0 +1,284 @@
+"DOTAAbilities"
+{
+  "scroll_collector_triple_shadow_bolt"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "vengefulspirit_magic_missile"
+    "ScriptFile"            "encounters/scroll_collector/scroll_collector_triple_shadow_bolt"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "9"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "1500"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "140"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "1500"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "140"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "36 42"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.32"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed"   "900"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two"   "50"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_additional_projectiles"   "2"
+        }
+
+    }
+  }
+
+
+  "scroll_collector_shadow_bolt_discharge"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "mirana_starfall"
+    "ScriptFile"            "encounters/scroll_collector/scroll_collector_shadow_bolt_discharge"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "16"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "1500"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "140"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "1500"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "140"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "3"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "36 42"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.5"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.32"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed"   "900"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two"   "35"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "teleport_chance"   "50"
+        }
+
+    }
+  }
+
+
+  "scroll_collector_reverse_jail"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "dark_seer_ion_shell"
+    "ScriptFile"            "encounters/scroll_collector/scroll_collector_reverse_jail"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "24"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "150"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "150"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "6"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "40 44"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.4"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.75"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two"   "40"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_additional_duration"   "3"
+        }
+
+    }
+  }
+
+
+  "scroll_collector_dark_orb"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "antimage_mana_void"
+    "ScriptFile"            "encounters/scroll_collector/scroll_collector_dark_orb"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "4"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "50"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "50"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "120"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "32 34 36"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.75"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.25"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed"   "450 500"
+        }
+
+    }
+  }
+
+
+}

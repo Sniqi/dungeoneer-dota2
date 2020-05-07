@@ -1,0 +1,18 @@
+<root>
+
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/ready/ready.css" />
+	</styles>
+  
+	<scripts>
+		<include src="file://{resources}/scripts/ready/ready.js" />
+	</scripts>
+
+	<Panel class="ReadyRoot" hittest="false">
+		<Button id="ButtonReady" onactivate="ButtonReady()" onmouseover="ButtonReadyMouseover()" onmouseout="ButtonReadyMouseout()">
+			<Label id="ButtonReadyText" text="Ready!" />
+		</Button>
+	</Panel>
+
+</root>

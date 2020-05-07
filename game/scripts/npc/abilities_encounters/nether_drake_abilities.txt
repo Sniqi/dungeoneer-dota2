@@ -1,0 +1,253 @@
+"DOTAAbilities"
+{
+  "nether_drake_deep_nether_flame"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "ogre_magi_ignite"
+    "ScriptFile"            "encounters/nether_drake/nether_drake_deep_nether_flame"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "6"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "250"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "250"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "58 62 66"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.5"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.5"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_per_sec"   "40 44 48"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "burning_ground_aoe"   "120"
+        }
+
+    }
+  }
+
+
+  "nether_drake_tail_lash"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "slardar_bash"
+    "ScriptFile"            "encounters/nether_drake/nether_drake_tail_lash"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "5"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "225"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "225"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "24 28 32"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "1"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "stun"   "1"
+        }
+
+    }
+  }
+
+
+  "nether_drake_twisted_nether"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PURE"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "enigma_black_hole"
+    "ScriptFile"            "encounters/nether_drake/nether_drake_twisted_nether"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "20"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "3"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "3.6"
+        }
+
+    }
+  }
+
+
+  "nether_drake_spreading_nether"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	//"AbilityUnitDamageType"  ""
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "jakiro_liquid_fire"
+    "ScriptFile"            "encounters/nether_drake/nether_drake_spreading_nether"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "17"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "2"
+        }
+
+    }
+  }
+
+
+  "nether_drake_erupting_nether"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "enigma_midnight_pulse"
+    "ScriptFile"            "encounters/nether_drake/nether_drake_erupting_nether"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "26"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "150"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "150"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "48 54"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.8"
+        }
+
+    }
+  }
+
+
+}

@@ -1,0 +1,58 @@
+"DOTAItems"
+{
+	//=================================================================================================================
+	// Book of Agility
+	//=================================================================================================================
+	"item_book_of_agility"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"3011"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_book_of_agility"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"			"item_book_of_agility"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		"ItemCost"						"3000"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemAliases"					"book of agility"
+		//"ItemStackable"					"1"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		//"ItemCastOnPickup"				"1"
+		//"ItemInitialCharges"			"1"
+		//"ItemDisplayCharges"			"1"
+		//"ItemStockMax"					"1"
+		//"ItemStockInitial"				"0"
+		//"ItemStockTime"					"1"
+		//"ItemInitialStockTime"			"0"//"600"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		//"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ShouldBeSuggested"				"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_agility"			"20"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"limit_per_hero"		"10"
+			}
+		}
+	}
+
+}

@@ -1,0 +1,358 @@
+.BossInfoRoot
+{
+	width: 575px;
+	
+	horizontal-align: left;
+	vertical-align: top;
+
+	margin-top: 120px;
+	margin-left: 5px;
+	
+	
+}
+
+/**********************/
+/** BossInfoList **/
+/**********************/
+
+#BossInfoListsWrap
+{
+	width: 100%;
+	height: 350px;
+	
+	margin-top: 0px;
+	
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+	border: 2px solid black;
+}
+
+#BossInfoLists
+{
+
+}
+
+.BossInfoList
+{
+	margin-top: 25px;
+}
+
+#BossInfoListBossImage
+{
+	width: 53px;
+	height: 30px;
+	
+	border: 2px solid black;
+}
+
+#BossInfoListBossImage:hover
+{
+	border: 2px solid #c4c4c4;
+}
+
+/**********************/
+/** BossInfoFrames **/
+/**********************/
+
+#BossInfoFrames
+{
+}
+
+.BossInfoFrame
+{
+	height: 515px;
+	
+	margin-top: 40px;
+}
+
+#BossInfoFrameBossImage
+{
+	width: 128px;
+	height: 72px;
+	
+	margin-top: 0px;
+	
+	border: 2px solid black;
+}
+
+#BossInfoFrameBossName
+{
+	margin-top: 0px;
+	margin-left: 200px;
+	
+	font-size: 34px;
+	font-weight: bold;
+	
+	color: white;
+
+    overflow: squish;
+}
+
+#BossInfoFrameBossScene
+{
+	width: 200px;
+	height: 300px;
+	
+	margin-top: -20px;
+
+	vertical-align: top;
+}
+
+#BossInfoFrameBossDescription
+{
+	width: 310px;
+	height: 140px;
+	
+	margin-top: 90px;
+	margin-left: 200px;
+	
+	font-size: 18px;
+	
+	overflow: squish scroll;
+	
+	color: white;
+}
+
+#BossInfoFrameBossAbilities
+{
+	width: 310px;
+	height: 24px;
+	
+	margin-top: 216px;
+	margin-left: 200px;
+	
+	font-weight: bold;
+	
+	color: white;
+}
+
+#BossInfoFrameBossItemDrops
+{
+	width: 310px;
+	height: 24px;
+	
+	margin-top: 292px;
+	margin-left: 200px;
+	
+	font-weight: bold;
+	
+	color: white;
+}
+
+
+/**********************/
+/** BossInfoAbilities **/
+/**********************/
+
+#BossInfoAbilities
+{
+	
+}
+
+.BossInfoAbility
+{
+	width: 310px;
+	height: 48px;
+	
+	margin-top: 285px;
+	margin-left: 200px;
+}
+
+#BossInfoAbilityImage
+{
+	width: 48px;
+	height: 48px;
+	
+	border: 2px solid black;
+}
+
+#BossInfoAbilityImage:hover
+{
+	border: 2px solid #c4c4c4;
+}
+
+
+/**********************/
+/** BossInfoItemDrops **/
+/**********************/
+
+#BossInfoItemDrops
+{
+
+}
+
+.BossInfoItemDrop
+{
+	width: 310px;
+	height: 80px;
+	
+	margin-top: 385px;
+	margin-left: 200px;
+}
+
+#BossInfoItemDropImage
+{
+	width: 48px;
+	height: 36px;
+	
+	border: 2px solid black;
+}
+
+#BossInfoItemDropImage:hover
+{
+	border: 2px solid #c4c4c4;
+}
+
+#BossInfoItemDropTxt
+{
+	vertical-align: top;
+
+	margin-top: 17px;
+	
+	font-size: 14px;
+	color: white;
+	box-shadow: fill #000000ff 0px 0px 0px 0px;
+}
+
+/**********************/
+/** BossInfoChallenge **/
+/**********************/
+
+#BossInfoChallenges
+{
+	flow-children: down;
+}
+
+.BossInfoChallenge
+{
+	flow-children: right;
+	border-bottom: 1px solid black;
+}
+
+#BossInfoChallengeLabelPanel
+{
+	width: 200px;
+	margin-top: 5px;
+}
+
+#BossInfoChallengeLabel
+{
+	color: white;
+	font-size: 17px;
+	margin-left: 10px;
+	horizontal-align: left;
+	vertical-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#BossInfoChallengeValuePanel
+{
+	width: 75px;
+	margin-top: 2px;
+}
+
+#BossInfoChallengeValue
+{
+	color: white;
+	font-size: 20px;
+	horizontal-align: left;
+	vertical-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+
+
+
+
+
+
+
+#BossInfoButton {
+ 	width: 120px;
+ 	height: 25px;
+	vertical-align: top;
+	horizontal-align: left;
+	margin-left: 0px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#BossInfoButtonText {
+	color: white;
+	font-size: 15px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#BossInfoButton:hover {
+	border: 1px solid #fff;
+}
+#BossInfoButton:active {
+ 	border: 3px solid #fff;
+}
+
+
+
+
+#BossInfoRerollButton {
+ 	width: 120px;
+ 	height: 25px;
+	vertical-align: top;
+	horizontal-align: left;
+
+	margin-top: 310px;
+	margin-left: 40px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+
+	z-index: 10;
+}
+
+#BossInfoRerollButtonText {
+	color: white;
+	font-size: 15px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#BossInfoRerollButton:hover {
+	border: 1px solid #fff;
+}
+#BossInfoRerollButton:active {
+ 	border: 3px solid #fff;
+}
+
+
+
+
+#BossChallengeButton {
+ 	width: 120px;
+ 	height: 25px;
+	vertical-align: top;
+	horizontal-align: left;
+	margin-top: 28px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#BossChallengeButtonText {
+	color: white;
+	font-size: 15px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#BossChallengeButton:hover {
+	border: 1px solid #fff;
+}
+#BossChallengeButton:active {
+ 	border: 3px solid #fff;
+}

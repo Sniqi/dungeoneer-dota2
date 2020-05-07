@@ -1,0 +1,343 @@
+.LootOverviewPickerRoot
+{
+    width: 100%;
+    height: 100%;
+}
+
+#LootOverviews
+{
+    width: 100%;
+    height: 100%;
+}
+
+#LootOverviewLines
+{
+    width: 60%;
+    height: 255px;
+
+    margin-top: 30%;
+    margin-left: 20%;
+
+    horizontal-align: left;
+    vertical-align: top;
+
+    border: 2px solid black;
+    box-shadow: fill #00000080 2px 2px 8px 0px;
+
+    flow-children: down;
+}
+
+.LootOverviewLine
+{
+    width: 100%;
+    height: 50px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+
+    border-bottom: 2px solid black;
+    
+    vertical-align: top;
+}
+
+.LootOverviewLine Label
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#LootOverviewBox_Currency_Descr
+{
+    width: 250px;
+    height: 100%;
+    
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#LootOverviewBox_Currency_Value
+{
+    width: 100px;
+    height: 100%;
+
+    margin-top: 5px;
+    margin-left: 325px;
+}
+
+#LootOverviewBox_Currency_Pic
+{
+    width: 45px;
+    height: 45px;
+
+    margin-top: 0px;
+    margin-left: 275px;
+}
+
+#LootOverviewBox_Currency_Multiplier
+{
+    width: 100px;
+    height: 100%;
+
+    margin-top: 5px;
+    margin-left: 475px;
+}
+
+#LootOverviewBox_Currency_Value_Total
+{
+    width: 150px;
+    height: 100%;
+
+    margin-top: 5px;
+    margin-left: 680px;
+}
+
+#LootOverviewBox_Currency_Pic_Total
+{
+    width: 45px;
+    height: 45px;
+    
+    margin-top: 0px;
+    margin-left: 630px;
+}
+
+#LootOverviewBox_Currency_Empower_Button
+{
+    width: 200px;
+    height: 40px;
+    
+    margin-top: -0px;
+    margin-left: 920px;
+
+    border: 2px solid black;
+    box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#LootOverviewBox_Currency_Empower_Button:hover {
+    border: 2px solid #fff;
+}
+#LootOverviewBox_Currency_Empower_Button:active {
+    border: 4px solid #fff;
+}
+
+#LootOverviewBox_Currency_Empower_Button_Txt
+{
+    width: 100%;
+    height: 100%;
+    
+    margin-top: 4px;
+    margin-left: 40px;
+
+    font-size: 20px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+#LootOverviewBox_Currency_Empower_Button_Pic
+{
+    width: 30px;
+    height: 30px;
+    
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+#LootOverviewBox_Currency_Empower_Multiplier_Txt
+{
+    font-size: 22px;
+    font-weight: bold;
+    color: green;
+
+    margin-top: 10px;
+    margin-left: 800px;
+}
+
+/* ButtonLock */
+
+#ButtonLock {
+    width: 200px;
+    height: 50px;
+    horizontal-align: center;
+    vertical-align: center;
+
+    margin-top: 150px;
+    
+    border: 2px solid black;
+    box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonLockText {
+    color: white;
+    font-size: 25px;
+    vertical-align: center;
+    horizontal-align: center;
+    text-align: center;
+    text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonLock:hover {
+    border: 1px solid #fff;
+}
+#ButtonLock:active {
+    border: 3px solid #fff;
+}
+
+/* ButtonLock End */
+
+#Timer
+{
+    color: white;
+    font-size: 35px;
+    margin-right: 290px;
+    margin-top: 150px;
+    horizontal-align: center;
+    vertical-align: center;
+    text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+
+/*
+
+
+.BaseHud
+{
+    width: 100%;
+    height: 100%;
+}
+
+.Clip
+{
+    horizontal-align: left;
+    vertical-align: middle;
+    margin-top: 300px;
+	margin-left: 50px;
+}
+
+
+
+
+
+#LootGold_Box
+{
+    width: auto;
+    height: auto;
+    /*background-color: #000000c0;
+    margin-top: 0px;
+}
+
+#LootGold_Round_Txt
+{
+    margin-top: 10px;
+    margin-left: 53px;
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+#LootGold_Round_Value
+{
+    margin-top: 10px;
+    margin-left: 230px;
+    text-align: left;
+    color: #ffd800;
+    font-size: 24px;
+    font-weight: bold;
+}
+#LootGold_Round_Pic
+{
+    margin-top: 10px;
+    margin-left: 200px;
+    width: 30px;
+}
+
+
+
+
+#LootGold_TimeBonus_Txt
+{
+    margin-top: 70px;
+    margin-left: 0px;
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+#LootGold_TimeBonus_Value
+{
+    margin-top: 70px;
+    margin-left: 230px;
+    text-align: left;
+    color: #ffd800;
+    font-size: 24px;
+    font-weight: bold;
+}
+#LootGold_TimeBonus_Pic
+{
+    margin-top: 70px;
+    margin-left: 200px;
+    width: 30px;
+}
+
+
+
+#LootGold_Sum_Separator
+{
+    margin-top: 6px;
+    margin-left: 315px;
+    text-align: left;
+    color: white;
+    font-size: 72px;
+    font-weight: bold;
+}
+#LootGold_Sum_Value
+{
+    margin-top: 36px;
+    margin-left: 390px;
+    text-align: left;
+    color: #ffd800;
+    font-size: 32px;
+    font-weight: bold;
+}
+#LootGold_Sum_Pic
+{
+    margin-top: 36px;
+    margin-left: 350px;
+    width: 42px;
+}
+
+
+
+
+#LootLevel_Box
+{
+    width: auto;
+    height: 250px;
+    margin-top: 125px;
+}
+
+#LootLevel_Round_Txt
+{
+    margin-top: 10px;
+    margin-left: 52px;
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+#LootLevel_Round_Value
+{
+    margin-top: 10px;
+    margin-left: 230px;
+    text-align: left;
+    color: #00d0ff;
+    font-size: 24px;
+    font-weight: bold;
+}
+#LootLevel_Round_Pic
+{
+    margin-top: 10px;
+    margin-left: 200px;
+    width: 30px;
+}
+
+*/

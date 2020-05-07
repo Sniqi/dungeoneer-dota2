@@ -1,0 +1,377 @@
+"DOTAAbilities"
+{
+  "deathspeaker_xunra_deathly_scythe"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "necrolyte_reapers_scythe"
+    "ScriptFile"            "encounters/deathspeaker_xunra/deathspeaker_xunra_deathly_scythe"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "8"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "450"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "450"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "15"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "80 90 100"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.7"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "move_speed_percentage"   "-40.0"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "magic_resist_percentage"   "-40.0"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_percentage"   "25"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "phase_two_delay"   "1.9"
+        }
+
+    }
+  }
+
+
+  "deathspeaker_xunra_summon_dead_army"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	//"AbilityUnitDamageType"  ""
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "rubick_arcane_supremacy"
+    "ScriptFile"            "encounters/deathspeaker_xunra/deathspeaker_xunra_summon_dead_army"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "32"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "2"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_percentage"   "50"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_three_percentage"   "25"
+        }
+
+    }
+  }
+
+
+  "deathspeaker_xunra_soulcatcher"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "death_prophet_spirit_siphon"
+    "ScriptFile"            "encounters/deathspeaker_xunra/deathspeaker_xunra_soulcatcher"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "20"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "5"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "100"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "1"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "link_break_range"   "450"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_percentage"   "40"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_damage_percentage"   "175"
+        }
+
+    }
+  }
+
+
+  "deathspeaker_xunra_runic_penalty"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "pugna_nether_ward"
+    "ScriptFile"            "encounters/deathspeaker_xunra/deathspeaker_xunra_runic_penalty"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "23"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "3"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "4"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "roots_damage"   "150"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "roots_move_speed_percentage"   "-33.0"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "roots_duration"   "20"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "haste_damage"   "100"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "haste_knockback"   "5000"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "solitude_damage"   "150"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "solitude_aoe"   "440"
+        }
+
+    }
+  }
+
+
+  "deathspeaker_xunra_bhamukas_mental_presence"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "obsidian_destroyer_equilibrium"
+    "ScriptFile"            "encounters/deathspeaker_xunra/deathspeaker_xunra_bhamukas_mental_presence"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "9"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "5000"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "225"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "5000"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "225"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "50"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "3.25"
+        }
+
+    }
+  }
+
+
+  "deathspeaker_xunra_bhamukas_physical_presence"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "abyssal_underlord_atrophy_aura"
+    "ScriptFile"            "encounters/deathspeaker_xunra/deathspeaker_xunra_bhamukas_physical_presence"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "9"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "225"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "225"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "50"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.2"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "stun"   "2.0"
+        }
+
+    }
+  }
+
+
+}

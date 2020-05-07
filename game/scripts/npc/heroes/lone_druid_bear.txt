@@ -1,0 +1,30 @@
+"DOTAUnits"
+{
+//=================================================================================
+// Lone Druid Spirit Bears
+//=================================================================================
+  "npc_dota_lone_druid_bear1"
+  {                   
+    // Abilities
+    //----------------------------------------------------------------
+    "Ability3"          "treant_living_armor"     // Ability 3
+  }
+  "npc_dota_lone_druid_bear2"
+  {                   
+    // Abilities
+    //----------------------------------------------------------------
+    "Ability3"          "treant_living_armor"     // Ability 3
+  }
+  "npc_dota_lone_druid_bear3"
+  {                   
+    // Abilities
+    //----------------------------------------------------------------
+    "Ability3"          "treant_living_armor"     // Ability 3
+  }
+  "npc_dota_lone_druid_bear4"
+  {                   
+    // Abilities
+    //----------------------------------------------------------------
+    "Ability3"          "treant_living_armor"     // Ability 3
+  }
+}

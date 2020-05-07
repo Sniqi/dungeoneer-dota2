@@ -1,0 +1,21 @@
+<root>
+    <styles>
+  		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+  		<include src="file://{resources}/styles/hero_select_overlay.css" />
+    </styles>
+
+    <scripts>
+      <include src="file://{resources}/scripts/hero_select_overlay.js" />
+    </scripts>
+
+  <Panel class="HeroSelectOverlayRoot" hittest="false">
+    <Panel id="PhaseInstructions" hittest="false">
+      <Label id="BanPhaseInstructions" text="#DOTA_LoadingBanPhase" hittest="false" />
+      <Label id="PickPhaseInstructions" text="Dungeoneer" hittest="false" /> <!-- #DOTA_LoadingPickPhase -->
+    </Panel>
+    <Panel class="HeroSelectTeamRowsContainer" hittest="false">
+  		<Panel id="HeroSelectTeamsContainer" hittest="false" />
+      <Panel id="HeroSelectTeamsContainer2" hittest="false" />
+    </Panel>
+  </Panel>
+</root>

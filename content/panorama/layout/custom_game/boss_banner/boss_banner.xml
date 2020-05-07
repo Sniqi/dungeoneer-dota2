@@ -1,0 +1,36 @@
+<root>
+
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/boss_banner/boss_banner.css" />
+	</styles>
+
+	<scripts>
+		<include src="file://{resources}/scripts/boss_banner/boss_banner.js" />
+	</scripts>
+
+	<snippets>
+
+		<snippet name="Banner">
+			<Panel class="Banner" hittest="false">
+				<Image id="BannerImage" src="" hittest="false" />
+				<Label id="BannerText" text="" hittest="false" />
+				<!-- antialias="true" drawbackground="0" renderdeferred="false" particleonly="false" environment="default" always-cache-composition-layer="true" -->
+				<DOTAScenePanel id="BannerScene" renderdeferred="false" particleonly="false" hittest="false" />
+			</Panel>
+		</snippet>
+
+		<snippet name="BannerArena">
+			<Panel class="BannerArena" hittest="false">
+				<Image id="BannerArenaImage" src="" hittest="false" />
+				<Label id="BannerArenaText" text="" hittest="false" />
+			</Panel>
+		</snippet>
+
+	</snippets>
+
+	<Panel class="Root" hittest="false">
+		<Panel id="Wrapper" hittest="false"></Panel>
+	</Panel>
+
+</root>

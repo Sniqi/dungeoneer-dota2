@@ -1,0 +1,21 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Venomancer
+  //=================================================================================================================
+  "npc_dota_hero_venomancer"
+  {
+    "AttributePrimary"    "DOTA_ATTRIBUTE_INTELLECT"
+    "AttributeBaseStrength"   "19"
+    "AttributeStrengthGain"   "2.10000"
+    "AttributeBaseIntelligence"   "26"
+    "AttributeIntelligenceGain"   "3.20000"
+    "AttributeBaseAgility"    "17"
+    "AttributeAgilityGain"    "1.800000"
+
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+    "Ability11"   "special_bonus_spell_amplify_10" // replaces special_bonus_gold_income_15
+    "Ability13"   "special_bonus_attack_speed_50" // replaces special_bonus_unique_venomancer_2
+  }
+}

@@ -1,0 +1,92 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Crimson Guard
+  //=================================================================================================================
+  "item_recipe_crimson_guard"
+  {
+  }
+
+  //=================================================================================================================
+  // Crimson Guard
+  //=================================================================================================================
+  "item_crimson_guard"
+  {
+		// Upgrade Info
+		//-------------------------------------------------------------------------------------------------------------
+		"MaxUpgradeLevel"                                     "3"
+		"ItemBaseLevel"                                       "1"
+		"UpgradesItems"                                       "item_crimson_guard;item_crimson_guard_2;item_crimson_guard_3"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"250 375 500"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_health_regen"	"10.50 15.75 21.00"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"6 9 12"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3 4 5"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_melee"	"70 105 140"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_ranged"	"35 53 70"
+			}			
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_chance"			"50"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"12 14 16"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_aoe_radius"		"1200"
+			}		
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_melee_active"	"60 90 120"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_ranged_active"	"60 90 120"
+			}		
+			"12"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_chance_active"			"100"
+			}	
+			"13"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tooltip_reapply_time"	"46"
+			}
+		}
+  }
+}

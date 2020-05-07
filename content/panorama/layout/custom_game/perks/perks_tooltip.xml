@@ -1,0 +1,82 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/perks/perks_tooltip.vcss_c" />
+	</styles>
+
+	<script>
+
+	function replaceAll(string, search, replacement) {
+		var target = string;
+		return target.replace(new RegExp(search, 'g'), replacement);
+	};
+
+	function setupTooltip()
+	{
+		$("#title").text = $.GetContextPanel().GetAttributeString( "title", "Title not found" );
+		$("#level").text = "Level "+$.GetContextPanel().GetAttributeString( "level", "" );
+
+		var description = $.GetContextPanel().GetAttributeString( "description1", "" );
+		description = description + $.GetContextPanel().GetAttributeString( "description2", "" );
+		description = description + $.GetContextPanel().GetAttributeString( "description3", "" );
+		description = description + $.GetContextPanel().GetAttributeString( "description4", "" );
+		description = description + $.GetContextPanel().GetAttributeString( "description5", "" );
+		description = description + $.GetContextPanel().GetAttributeString( "description6", "" );
+		description = description + $.GetContextPanel().GetAttributeString( "description7", "" );
+		description = description + $.GetContextPanel().GetAttributeString( "description8", "" );
+		description = description + $.GetContextPanel().GetAttributeString( "description9", "" );
+
+		description = description.split('$(plus)').join('&#43;');
+		description = description.split('$(minus)').join('&#800;');
+
+		description = description.split('$(info)').join('<img src="file://{images}/custom_game/misc/info.png">&nbsp;');
+		
+		description = description.split('$(passive)').join('<img src="file://{images}/custom_game/perks/perk_types/passive_small.png">&nbsp;');
+		description = description.split('$(triggered)').join('<img src="file://{images}/custom_game/perks/perk_types/triggered_small.png">&nbsp;');
+		description = description.split('$(dealingdamage)').join('<img src="file://{images}/custom_game/perks/perk_types/dealingdamage_small.png">&nbsp;');
+
+		description = description.split('$(offensive)').join('<img src="file://{images}/custom_game/perks/perk_types/offensive_small.png">&nbsp;');
+		description = description.split('$(defensive)').join('<img src="file://{images}/custom_game/perks/perk_types/defensive_small.png">&nbsp;');
+		description = description.split('$(supportive)').join('<img src="file://{images}/custom_game/perks/perk_types/supportive_small.png">&nbsp;');
+		description = description.split('$(economic)').join('<img src="file://{images}/custom_game/perks/perk_types/economic_small.png">&nbsp;');
+
+		description = description.split('$(arcane)').join('<img src="file://{images}/custom_game/perks/perk_types/arcane_small.png">&nbsp;');
+		description = description.split('$(shadow)').join('<img src="file://{images}/custom_game/perks/perk_types/shadow_small.png">&nbsp;');
+		description = description.split('$(holy)').join('<img src="file://{images}/custom_game/perks/perk_types/holy_small.png">&nbsp;');
+		description = description.split('$(lightning)').join('<img src="file://{images}/custom_game/perks/perk_types/lightning_small.png">&nbsp;');
+		description = description.split('$(earth)').join('<img src="file://{images}/custom_game/perks/perk_types/earth_small.png">&nbsp;');
+		description = description.split('$(fire)').join('<img src="file://{images}/custom_game/perks/perk_types/fire_small.png">&nbsp;');
+
+		$("#description").text = description;
+
+		$("#perkType1Txt").text = $.GetContextPanel().GetAttributeString( "type1", "" );
+		$("#perkType2Txt").text = $.GetContextPanel().GetAttributeString( "type2", "" );
+
+		var type1 = $.GetContextPanel().GetAttributeString( "type1", "" ).toLowerCase().replace(" ", "_");
+		var type2 = $.GetContextPanel().GetAttributeString( "type2", "" ).toLowerCase().replace(" ", "_");
+
+		$("#perkType1").SetImage( "file://{images}/custom_game/perks/perk_types/" + type1 + ".png" );
+		$("#perkType2").SetImage( "file://{images}/custom_game/perks/perk_types/" + type2 + ".png" );
+	}
+
+	</script>
+
+	<Panel class="PerkTooltip" hittest="false" ontooltiploaded="setupTooltip()">
+		<Panel id="headerContainer" hittest="false" >
+			<Label id="title" hittest="false" />
+			<Label id="level" hittest="false" />
+		</Panel>
+
+		<Panel id="perkTypeContainer" hittest="false" >
+			<Label id="perkType2Txt" html="true" hittest="false" />
+			<Image id="perkType2" scaling="stretch-to-fit-preserve-aspect" />
+			<Label id="perkType1Txt" html="true" hittest="false" />
+			<Image id="perkType1" scaling="stretch-to-fit-preserve-aspect" />
+		</Panel>
+
+		<Panel id="descriptionContainer" hittest="false" >
+			<Label id="description" html="true" hittest="false" />
+		</Panel>
+	
+	</Panel>
+</root>

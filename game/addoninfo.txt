@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+	"TeamCount"		"2"
+	"maps"			"dungeoneer"
+	"IsPlayable"	"1"
+	"dungeoneer"
+	{
+		"MaxPlayers"	"5"
+	}
+}

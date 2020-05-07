@@ -1,0 +1,101 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Heart of Tarrasque 2
+  //=================================================================================================================
+  "item_recipe_heart_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2528"                            // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "3900"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_heart_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_heart"
+    }
+  }
+
+  //=================================================================================================================
+  // Heart of Tarrasque 2
+  //=================================================================================================================
+  "item_heart_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2529"                            // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                                           "item_heart"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "item_heart"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "7.0"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "9100"
+    "ItemShopTags"                                        "str;regen_health;health_pool"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "hot 2;heart of tarrasque 2;heart 2"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_heart;item_heart_2;item_heart_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_strength"    "45 68 90"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_health"      "400 600 800"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "hp_regen_amp"      "20 30 40"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "health_regen_rate"   "1 2 3"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cooldown_melee"    "5"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cooldown_ranged_tooltip"   "7"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "fixed_health_regen"    "10 15 20"
+      }
+    }
+  }
+}

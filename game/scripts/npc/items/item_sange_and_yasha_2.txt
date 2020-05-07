@@ -1,0 +1,92 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Sange and Yasha 2
+  //=================================================================================================================
+  "item_recipe_sange_and_yasha_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2556"                            // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "3075"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_sange_and_yasha_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_sange_and_yasha"
+    }
+  }
+
+  //=================================================================================================================
+  // Sange and Yasha 2
+  //=================================================================================================================
+  "item_sange_and_yasha_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2557"                            // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                                           "item_sange_and_yasha"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "item_sange_and_yasha"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "7175"
+    "ItemShopTags"                                        "damage;str;agi;attack_speed;unique"
+    "ItemQuality"                                         "artifact"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemAliases"                                         "sny 2;s&y 2;sy 2;sange and yasha 2"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_sange_and_yasha;item_sange_and_yasha_2;item_sange_and_yasha_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_strength"    "16 24 32"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_agility"     "16 24 32"
+      }         
+      "03"
+      {
+        "var_type"            "FIELD_INTEGER"
+        "status_resistance"       "20 30 40"
+      }   
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_attack_speed"  "16 24 32"
+      }
+      "05"
+      {
+        "var_type"            "FIELD_INTEGER"
+        "movement_speed_percent_bonus"  "30 35 40"
+      }   
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "hp_regen_amp"      "30 45 60"
+      }
+    }
+  }
+}

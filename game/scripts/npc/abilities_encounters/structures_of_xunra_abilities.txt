@@ -1,0 +1,332 @@
+"DOTAAbilities"
+{
+  "structures_of_xunra_linked_obelisks"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	//"AbilityUnitDamageType"  ""
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "undying_tombstone"
+    "ScriptFile"            "encounters/structures_of_xunra/structures_of_xunra_linked_obelisks"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "1000"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+
+    }
+  }
+
+
+  "structures_of_xunra_unholy_discharge"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "rubick_fade_bolt"
+    "ScriptFile"            "encounters/structures_of_xunra/structures_of_xunra_unholy_discharge"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "12"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "180"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "180"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "86 90 94"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay_min"   "3"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay_max"   "5"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "count"   "64"
+        }
+
+    }
+  }
+
+
+  "structures_of_xunra_obelisk_summon_unholy_army"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	//"AbilityUnitDamageType"  ""
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "structures_of_xunra_obelisk_summon_unholy_army"
+    "ScriptFile"            "encounters/structures_of_xunra/structures_of_xunra_obelisk_summon_unholy_army"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "48"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "3"
+        }
+
+    }
+  }
+
+
+  "structures_of_xunra_unholy_warrior_cleave"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "sven_great_cleave"
+    "ScriptFile"            "encounters/structures_of_xunra/structures_of_xunra_unholy_warrior_cleave"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "10"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "320"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "80"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "320"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "80"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "24 28 32"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.5"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "move_speed_percentage"   "-40.0"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "debuff_duration"   "10"
+        }
+
+    }
+  }
+
+
+  "structures_of_xunra_unholy_archer_concentrated_arrow"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "windrunner_powershot"
+    "ScriptFile"            "encounters/structures_of_xunra/structures_of_xunra_unholy_archer_concentrated_arrow"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "18"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "100"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "100"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "duration"   "2.0"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "40 43 46"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "3"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "range"   "3200"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed"   "1300"
+        }
+
+    }
+  }
+
+
+  "structures_of_xunra_unholy_warlock_transfer_energy"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "pugna_life_drain"
+    "ScriptFile"            "encounters/structures_of_xunra/structures_of_xunra_unholy_warlock_transfer_energy"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "18"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "1000"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "1000"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "4"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "24 28 32"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "3"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "heal_percentage"   "14 16 18"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "heal_amp_percentage"   "400"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "hp_loss_to_cancel_percentage"   "12"
+        }
+
+    }
+  }
+
+
+}

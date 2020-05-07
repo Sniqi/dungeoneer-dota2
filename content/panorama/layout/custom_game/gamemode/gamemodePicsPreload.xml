@@ -1,0 +1,13 @@
+﻿<root>
+  <snippets>
+	<snippet name="Compile">
+		<Image src="file://{images}/custom_game/gamemode/Classic.png" />
+		<Image src="file://{images}/custom_game/gamemode/Casual.png" />
+		<Image src="file://{images}/custom_game/gamemode/Endless.png" />
+		<Image src="file://{images}/custom_game/gamemode/Free.png" />
+		<Image src="file://{images}/custom_game/gamemode/Free.png" />
+		<Image src="file://{images}/custom_game/boss_banner/banner2.png" />
+		<Image src="file://{images}/custom_game/misc/gold.png" />
+	</snippet>
+  </snippets>
+</root>

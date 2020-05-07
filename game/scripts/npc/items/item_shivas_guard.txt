@@ -1,0 +1,71 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Shiva's Guard
+  //=================================================================================================================
+  "item_recipe_shivas_guard"
+  {
+  }
+
+  //=================================================================================================================
+  // Shiva's Guard
+  //=================================================================================================================
+  "item_shivas_guard"
+  {
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_shivas_guard;item_shivas_guard_2;item_shivas_guard_3"
+
+    // Special-----------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_intellect"   "30 45 60"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_armor"     "15 22 30"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "aura_radius"     "1200"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "aura_attack_speed"   "-45 -55 -65"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blast_damage"      "200 300 400"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blast_movement_speed"  "-40 -50 -60"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "blast_debuff_duration" "4.0"
+      }
+      "08"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blast_radius"      "900"
+      }
+      "09"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blast_speed"     "350"
+      }
+    }
+  }
+}

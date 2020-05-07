@@ -1,0 +1,35 @@
+.ReadyRoot
+{
+	width: 100%;
+	height: 100%;
+}
+
+#ButtonReady {
+ 	width: 90px;
+ 	height: 30px;
+
+	horizontal-align: left;
+	vertical-align: top;
+
+	margin-top: 70px;
+	margin-left: 245px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonReadyText {
+	color: white;
+	font-size: 15px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonReady:hover {
+	border: 1px solid #fff;
+}
+#ButtonReady:active {
+ 	border: 3px solid #fff;
+}

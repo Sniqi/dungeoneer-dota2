@@ -1,0 +1,49 @@
+"DOTAAbilities"
+{
+"witch_doctor_paralyzing_cask"
+  {
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "14.0 12.0 10.0 8.0"
+
+    // Damage.
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityDamage"                                       "90 130 170 210"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "hero_duration"                                   "0.0 0.0 0.0 0.0"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "creep_duration"                                  "0.0 0.0 0.0 0.0"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "hero_damage"                                     "90 130 170 210"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bounce_range"                                    "800 800 800 800"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bounces"                                         "3 5 7 9"
+      }
+      "07"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "bounce_delay"                                    "0.05"
+      }
+    }
+  }
+}

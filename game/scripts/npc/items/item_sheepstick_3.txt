@@ -1,0 +1,96 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Guinsoos Scythe of Vyse 3
+  //=================================================================================================================
+  "item_recipe_sheepstick_3"
+  {
+    "ID"                                                  "2566"    // unique ID
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemCost"                                            "4275"
+    "ItemShopTags"                                        ""
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_sheepstick_3"
+    "ItemRequirements"
+    {
+      "01"                                                "item_sheepstick_2"
+    }
+  }
+
+  //=================================================================================================================
+  // Guinsoos Scythe of Vyse 3
+  //=================================================================================================================
+  "item_sheepstick_3"
+  {
+    // General-----------------------------------------------------------------------------------------------------
+    "ID"                                                  "2567"    //Unique ID
+    "BaseClass"                                           "item_sheepstick"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "FightRecapLevel"                                     "2"
+    "AbilityTextureName"                                  "item_sheepstick"
+
+    // Stats-------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "800"
+    "AbilityCastPoint"                                    "0.0"
+    "AbilityCooldown"                                     "40.0 37.0 34.0"
+    "AbilitySharedCooldown"                               "hex"
+
+    // Item Info---------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "250"
+    "ItemCost"                                            "14250"
+    "ItemShopTags"                                        "int;regen_mana;agi;hard_to_tag"
+    "ItemQuality"                                         "rare"
+    "ItemAliases"                                         "hex 3;sheepstick 3;scythe of vyse 3"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+    "UpgradesItems"                                       "item_sheepstick;item_sheepstick_2;item_sheepstick_3"
+
+    // Special-----------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_strength"    "10 15 20"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_agility"     "10 15 20"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_intellect"   "35 53 70"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "bonus_mana_regen"    "9.0 13.5 18.0"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "sheep_duration"    "2.5 3.0 3.5"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "sheep_movement_speed"  "140"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "tooltip_range"     "800"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+  "%AbilityName%"
+  {
+    "AbilityBehavior"       "%AbilityBehavior% | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	%AbilityUnitTargetType_Block%"AbilityUnitTargetType" "%AbilityUnitTargetType%"
+	%AbilityUnitTargetTeam_Block%"AbilityUnitTargetTeam" "%AbilityUnitTargetTeam%"
+	%AbilityUnitDamageType_Block%"AbilityUnitDamageType"  "%AbilityUnitDamageType%"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "%AbilityTextureName%"
+    "ScriptFile"            "encounters/%HeroName%/%AbilityName%"
+	
+	"AnimationPlaybackRate"         "%AbilityCastAnimation_Speed%"
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "%MaxLevel%"
+    "RequiredLevel"          "%RequiredLevel%"
+    "LevelsBetweenUpgrades"  "%LevelsBetweenUpgrades%"
+    "AbilityCastPoint"       "%AbilityCastPoint%"
+    "AbilityCooldown"        "%AbilityCooldown%"
+    "AbilityManaCost"        "%AbilityManaCost%"
+    %AbilityCastRange_Block%"AbilityCastRange"       "%AbilityCastRange%"
+	"AbilityCastRangeBuffer" "150"
+	%AbilityChannelTime_Block%"AbilityChannelTime"     "%AbilityChannelTime%"
+    %AbilityCastAnimation_Block%"AbilityCastAnimation"   "%AbilityCastAnimation%"
+	%AoERadius_Block%"AoERadius"              "%AoERadius%"
+
+    "AbilitySpecial"
+    {
+%AbilitySpecial%
+    }
+  }

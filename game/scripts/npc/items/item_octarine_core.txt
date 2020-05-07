@@ -1,0 +1,62 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Octarine Core
+  //=================================================================================================================
+  "item_recipe_octarine_core"
+  {
+  }
+
+  //=================================================================================================================
+  // Octarine Core
+  //=================================================================================================================
+  "item_octarine_core"
+  {
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_octarine_core;item_octarine_core_2;item_octarine_core_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_intelligence"  "25 38 50"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_health"      "425 638 850"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_mana"      "425 638 850"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_cooldown"    "20 24 28"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "hero_lifesteal"    "2.5"
+      }     
+      "06"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "creep_lifesteal"   "0.5"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "active_duration"   "7"
+      }
+    }
+  }
+}

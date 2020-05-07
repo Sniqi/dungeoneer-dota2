@@ -1,0 +1,96 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Eye of Skadi 2
+  //=================================================================================================================
+  "item_recipe_skadi_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2568"    // unique ID
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "4125"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_skadi_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_skadi"
+    }
+  }
+
+  //=================================================================================================================
+  // Eye of Skadi 2
+  //=================================================================================================================
+  "item_skadi_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2569"    // unique ID
+    "BaseClass"                                           "item_skadi"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "item_skadi"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "9625"
+    "ItemShopTags"                                        "agi;str;int;hard_to_tag;mana_pool;health_pool;unique"
+    "ItemQuality"                                         "artifact"
+    "ItemAliases"                                         "eos 2;eye of skadi 2;skadi 2"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_skadi;item_skadi_2;item_skadi_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_all_stats"   "25 38 50"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_health"      "225 338 450"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_mana"      "250 375 500"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cold_movement_speed" "-8 -12 -16"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cold_attack_speed"   "-8 -12 -16"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "cold_duration_melee" "3.0"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "cold_duration_ranged"  "3.0"
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.DamagemetersRoot
+{
+	width: 350px;
+	height: 172px;
+	
+	horizontal-align: left;
+	vertical-align: bottom;
+
+	margin-bottom: 125px;
+	margin-left: 5px;
+}
+
+#DamagemetersFrame
+{
+	width: 100%;
+	height: 135px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#Damagemeters
+{
+	flow-children: down;
+	margin-top: 2px;
+}
+
+.Damagemeter
+{
+	border-bottom: 1px solid black;
+}
+
+
+
+#ButtonDamagemeters {
+ 	width: 76px;
+ 	height: 35px;
+	vertical-align: bottom;
+	horizontal-align: left;
+
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonDamagemetersText {
+	color: white;
+	font-size: 15px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonDamagemeters:hover {
+	border: 1px solid #fff;
+}
+#ButtonDamagemeters:active {
+ 	border: 3px solid #fff;
+}
+
+
+
+#BackgroundBar
+{
+	width: 0%;
+	height: 80%;
+	background-color: orange;
+	opacity: 0.66;
+}
+
+#DamagemeterIcon
+{
+	width: 24px;
+	height: 24px;
+	horizontal-align: left;
+	vertical-align: center;
+}
+
+#DamagemeterLabel
+{
+	width: 400px;
+	color: white;
+	font-size: 17px;
+	margin-left: 36px;
+	horizontal-align: left;
+	vertical-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#DamagemeterValue
+{
+	/*width: 230px;*/
+	color: white;
+	font-size: 17px;
+	margin-right: 5px;
+	horizontal-align: right;
+	vertical-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+

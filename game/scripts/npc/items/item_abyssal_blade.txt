@@ -1,0 +1,92 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Abyssal Blade
+  //=================================================================================================================
+  "item_recipe_abyssal_blade"
+  {
+  }
+
+  //=================================================================================================================
+  // Abyssal Blade
+  //=================================================================================================================
+  "item_abyssal_blade"
+  {
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_abyssal_blade;item_abyssal_blade_2;item_abyssal_blade_3"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"		"25 38 50"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"250 375 500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_health_regen"	"10 15 20"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_melee"	"70 105 140"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_ranged"	"35 53 70"
+			}			
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_chance"			"50"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"10 15 20"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bash_chance_melee"		"25"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bash_chance_ranged"		"25"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bash_duration"			"2.0"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bash_cooldown"			"10.0"
+			}
+			"12"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_chance_damage"	"125 200 350"
+			}
+			"13"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"				"2.0"
+			}
+		}
+  }
+}

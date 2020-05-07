@@ -1,0 +1,36 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/score/score.css" />
+  </styles>
+
+  <scripts>
+    <include src="file://{resources}/scripts/score/score.js" />
+  </scripts>
+
+  <Panel hittest="false" class="BaseHud">
+
+    <Panel hittest="false" class="Clip">
+
+      <Panel hittest="false" id="ScoreBox">
+          <Label id="ScoreTxt" text="Map Score:"/>
+          <Label id="ScoreValue" text="0"/>
+      </Panel>
+
+	    <Label id="ScoreValueAdjustment" text="0"/>
+
+	    <Panel hittest="false" id="DifficultyBox">
+        <Label id="DifficultyTxt" text="Game Mode:"/>
+        <Label id="DifficultyValue" text="???"/>
+      </Panel>
+
+      <Panel hittest="false" id="RoundBox">
+        <Label id="RoundTxt" text="Round:"/>
+        <Label id="RoundValue" text="1"/>
+      </Panel>
+
+    </Panel>
+
+  </Panel>
+
+</root>

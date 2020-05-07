@@ -1,0 +1,85 @@
+"DOTAItems"
+{
+	//=================================================================================================================
+	// Recipe: Vladimir 2
+	//=================================================================================================================
+	"item_recipe_vladmir_2"
+  {
+    "ID"                                                  "2587"  // unique ID
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemCost"                                            "1450"
+    "ItemShopTags"                                        ""
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_vladmir_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_vladmir"
+    }
+  }
+
+	//=================================================================================================================
+	// Vladimir 2
+	//=================================================================================================================
+	"item_vladmir_2"
+  {
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"2588"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"BaseClass"                     "item_vladmir"
+		"AbilityTextureName"            "item_vladmir"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastRange"				"1200"
+
+		// Upgrade Info
+		//-------------------------------------------------------------------------------------------------------------
+		"MaxUpgradeLevel"                                     "3"
+		"ItemBaseLevel"                                       "2"
+		"UpgradesItems"                                       "item_vladmir;item_vladmir_2;item_vladmir_3"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3450"
+		"ItemShopTags"					"lifesteal;damage;armor;regen_mana"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"vladmir's offering 2;vlads 2"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"mana_regen_aura"		"1.50 2.25 3.00"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"armor_aura"			"3 4 5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vampiric_aura"			"1"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"	"1200"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"6 9 12"
+			}
+		}
+  }
+}

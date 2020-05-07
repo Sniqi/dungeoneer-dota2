@@ -1,0 +1,53 @@
+<root>
+
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/perks/perks.css" />
+  </styles>
+  
+  <scripts>
+    <include src="file://{resources}/scripts/perks/perks.js" />
+  </scripts>
+  
+  <snippets>
+
+	<snippet name="PerksButton">
+	
+		<Button class="PerksButton">
+			<Image id="PerksPicture" src="" scaling="stretch-to-fit-preserve-aspect" />
+			<Panel id="PerksLevel">
+				<Label id="PerksLevelText" html="true" text="0" />
+			</Panel>
+		</Button>
+		
+	</snippet>
+
+  </snippets>
+  
+  <Panel class="PerksPickerRoot" hittest="false">
+		<Panel id="Perkss">
+			<Label id="Headline" html="true" text="" />
+			<Label id="HeadlineBuy" text="Buy" />
+			<Panel id="PerksButtons"></Panel>
+			<Label id="HeadlineUpgrade" text="Upgrade" />
+			<Panel id="PerksButtonsUpgrade"></Panel>
+			<Label id="Timer" text="" />
+			<Label id="ReplaceTxt" text="" html="true" />
+			<Button id="ButtonContinue" onactivate="ButtonContinueActivate()">
+				<Label id="ButtonContinueText" text="Continue" />
+			</Button>
+			<Button id="ButtonReroll" onactivate="ButtonRerollActivate()" visible="false" enabled="false">
+				<Label id="ButtonRerollText" text="Reroll" visible="false" enabled="false" />
+			</Button>
+			<Panel id="ReplaceMessage">
+				<Label id="ReplaceMessageTxt" text="You can now replace your active Perks if you wish.\n\nFor this, just click on an active Perk at the bottom left and then choose your new Perk." html="true" />
+				<Button id="ReplaceMessageButton" onactivate="ReplaceMessageButtonActivate()">
+					<Label id="ReplaceMessageButtonTxt" text="Acknowledge" />
+				</Button>
+			</Panel>
+			<Image id="Help" src="file://{images}/custom_game/misc/help.png" scaling="stretch-to-fit-preserve-aspect" onmouseover="HelpTooltipShow()" onmouseout="HelpTooltipHide()" />
+		</Panel>
+  </Panel>
+  
+
+</root>

@@ -1,0 +1,92 @@
+"DOTAHeroes"
+{
+  "npc_dota_hero_iron_claw"
+  {
+    "BaseClass"       "npc_dota_hero_lone_druid"
+	"HeroID"          "181"
+	
+	"Model"           "models/items/lone_druid/bear/iron_claw_spirit_bear/iron_claw_spirit_bear.vmdl"
+    "ModelScale"      "1.75"
+
+	"AbilityLayout"   "3"
+
+    "Ability1"        "iron_claw_iron_hide"
+    "Ability2"        "iron_claw_absorbing_skin"
+    "Ability3"        "iron_claw_rear_up"
+    "Ability4"        "iron_claw_bear_traps"
+    "Ability5"        "iron_claw_chicken"
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+    "Ability17"       ""
+    "Ability18"       ""
+    "Ability19"       ""
+    "Ability20"       ""
+    "Ability21"       ""
+    "Ability22"       ""
+    "Ability23"       ""
+
+    "ArmorPhysical"       "8"          // Physical protection.
+    "MagicalResistance"   "15"      // Magical protection (percentage).
+	
+    "AttackCapabilities"  "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"     "10"        // Damage range min.
+    "AttackDamageMax"     "10"        // Damage range max.
+	"AttackRange"         "200"
+    "AttackDamageType"    "DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"          "1.20"
+    "AttackSpeedActivityModifiers"
+    {
+      "fast"    "170"
+      "faster"  "275"
+      "fastest" "350"
+    }
+	
+    //"ProjectileModel" ""
+    //"ProjectileSpeed" ""
+    //"SoundSet"        ""
+	
+    "AttributePrimary"          "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"     "0"                   // Base strength
+    "AttributeStrengthGain"     "0"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "0"                   // Base intelligence
+    "AttributeIntelligenceGain" "0"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"      "0"                   // Base agility
+    "AttributeAgilityGain"      "0"                   // Agility bonus per level.
+
+    "BountyXP"            "0"                 // Experience earn.
+    "BountyGoldMin"       "0"                 // Gold earned min.
+    "BountyGoldMax"       "0"                 // Gold earned max.
+
+    "BoundsHullName"            "DOTA_HULL_SIZE_HUGE"
+    "ProjectileCollisionSize"   "100"
+    "RingRadius"                "100"
+    "HealthBarOffset"           "260"
+
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"         "290"              // Speed.
+    "MovementTurnRate"      "0.35"           // Turning rate.
+
+    "StatusHealth"          "400"               // Base health.
+    "StatusHealthRegen"     "0"          // Health regeneration rate.
+    "StatusMana"            "1000"                 // Base mana.
+    "StatusManaRegen"       "250"            // Mana regeneration rate.
+	
+    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+    "UnitRelationshipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+    "HasInventory"          "1"
+
+    "AttackAcquisitionRange"   "5000"              // Range within a target can be acquired.
+    "VisionDaytimeRange"       "2000"              // Range of vision at night time.
+    "VisionNighttimeRange"     "2000"              // Range of vision at night time.
+  }
+}

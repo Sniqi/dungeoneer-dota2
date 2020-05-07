@@ -1,0 +1,279 @@
+"DOTAAbilities"
+{
+  "smodhex_satyr_warlock_shadow_fountain"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "night_stalker_void"
+    "ScriptFile"            "encounters/smodhex_satyr_warlock/smodhex_satyr_warlock_shadow_fountain"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "25"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "125 135 145"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "125 135 145"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "12"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "16 18 20"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.50"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_instances"   "24"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "3.75"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "location_damage"   "10"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "location_aoe"   "250"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_percentage"   "45"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_buff_duration"   "10"
+        }
+
+    }
+  }
+
+
+  "smodhex_satyr_warlock_shadow_bolt_volley"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "luna_eclipse"
+    "ScriptFile"            "encounters/smodhex_satyr_warlock/smodhex_satyr_warlock_shadow_bolt_volley"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "8"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "360"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "360"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "56 60 64"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.75"
+        }
+
+    }
+  }
+
+
+  "smodhex_satyr_warlock_critical_mass"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "leshrac_diabolic_edict"
+    "ScriptFile"            "encounters/smodhex_satyr_warlock/smodhex_satyr_warlock_critical_mass"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "15"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "475"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "475"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "56 60 64"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "3.5"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "stun"   "3.3"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_percentage"   "45"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_damage_percentage"   "18 20 22"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_damage_duration"   "300"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "phase_two_damage_interval"   "0.5"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_aoe"   "360"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "phase_two_interval"   "1.25"
+        }
+
+    }
+  }
+
+
+  "smodhex_satyr_warlock_spiral_of_death"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PURE"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "enigma_midnight_pulse"
+    "ScriptFile"            "encounters/smodhex_satyr_warlock/smodhex_satyr_warlock_spiral_of_death"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "38"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "250"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "250"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "75 80 85"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "3"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration_max_hp"   "12"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration_min_hp"   "9"
+        }
+
+    }
+  }
+
+
+}

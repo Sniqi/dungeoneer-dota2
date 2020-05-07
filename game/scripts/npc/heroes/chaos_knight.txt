@@ -1,0 +1,14 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Chaos Knight
+  //=================================================================================================================
+  "npc_dota_hero_chaos_knight"
+  {
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+    "Ability14"   "special_bonus_attack_damage_50" // replaces special_bonus_gold_income_25
+    "Ability15"   "special_bonus_lifesteal_15" // replaces special_bonus_unique_chaos_knight Reality Rift Pierces Spell Immune
+    "Ability17"   "special_bonus_attack_speed_50" // replaces special_bonus_unique_chaos_knight_3 +2 Max  Chaos Bolt Duration
+  }
+}

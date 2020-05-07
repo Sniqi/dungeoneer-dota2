@@ -1,0 +1,26 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Omniknight: Degen Aura
+  //=================================================================================================================
+  "omniknight_degen_aura"
+  {
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "speed_bonus"                                     "-4 -8 -12 -16"
+        "LinkedSpecialBonus"                              "special_bonus_unique_omniknight_2"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "attack_bonus_tooltip"                            "-10 -15 -20 -25"
+        "LinkedSpecialBonus"                              "special_bonus_unique_omniknight_2"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<root>
+
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/retryfight/retryfight.css" />
+	</styles>
+  
+	<scripts>
+		<include src="file://{resources}/scripts/retryfight/retryfight.js" />
+	</scripts>
+
+	<Panel class="RetryFightRoot" hittest="false">
+		<Button id="ButtonRetryFight" onactivate="ButtonRetryFight()" onmouseover="ButtonRetryFightMouseover()" onmouseout="ButtonRetryFightMouseout()">
+			<Label id="ButtonRetryFightText" text="Retry Fight" />
+		</Button>
+	</Panel>
+
+</root>

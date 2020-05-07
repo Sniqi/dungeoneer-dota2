@@ -1,0 +1,284 @@
+"DOTAAbilities"
+{
+  "wind_harpy_windy_implosion"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "skywrath_mage_mystic_flare"
+    "ScriptFile"            "encounters/wind_harpy/wind_harpy_windy_implosion"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "32"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "duration"   "6.0"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.0"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_force"   "3500"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_damage"   "30"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_to_cancel_percentage"   "100"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "move_speed_percentage"   "-45.0 -55.0"
+        }
+
+    }
+  }
+
+
+  "wind_harpy_gust"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "tornado_tempest"
+    "ScriptFile"            "encounters/wind_harpy/wind_harpy_gust"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "19"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "1100"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "1100"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "duration"   "1.2"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_force"   "800"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_damage"   "30 33"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "push_interval"   "0.4"
+        }
+
+    }
+  }
+
+
+  "wind_harpy_tornado"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "brewmaster_storm_cyclone"
+    "ScriptFile"            "encounters/wind_harpy/wind_harpy_tornado"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "0"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "160"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "160"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "20 24"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.2"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "move_speed"   "100"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two"   "50"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_move_speed"   "200"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_radius_percentage"   "20"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_three"   "25"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_three_move_speed"   "300"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_three_radius_percentage"   "40"
+        }
+
+    }
+  }
+
+
+  "wind_harpy_thorny_blockage"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "dark_willow_bramble_maze"
+    "ScriptFile"            "encounters/wind_harpy/wind_harpy_thorny_blockage"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "18"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "175"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "175"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "38 44"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.00"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_damage"   "24 28"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_force"   "2000"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "touch_damage"   "16 18"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "touch_damage_interval"   "0.5"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "bounce_damage"   "32 36"
+        }
+
+    }
+  }
+
+
+}

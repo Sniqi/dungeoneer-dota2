@@ -1,0 +1,319 @@
+"DOTAAbilities"
+{
+  "a_mighty_boar_tremble"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "ursa_earthshock"
+    "ScriptFile"            "encounters/a_mighty_boar/a_mighty_boar_tremble"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "6"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "330"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "330"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "50 55"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.2"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "stun"   "0.2"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "incoming_damage_percentage"   "30"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "vulnerable_duration"   "20"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two"   "70"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "earthquake_damage"   "25 30"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "earthquake_damage_duration"   "12"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "earthquake_damage_interval"   "0.5"
+        }
+        "11"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "earthquake_count"   "3"
+        }
+        "12"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "earthquake_aoe"   "200"
+        }
+        "13"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "earthquake_delay"   "1.5"
+        }
+
+    }
+  }
+
+
+  "a_mighty_boar_charge"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "centaur_stampede"
+    "ScriptFile"            "encounters/a_mighty_boar/a_mighty_boar_charge"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "19"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "10 12"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "0"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "stun"   "1.2"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_force"   "1800"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_damage"   "50 60"
+        }
+
+    }
+  }
+
+
+  "a_mighty_boar_trample"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "magnataur_skewer"
+    "ScriptFile"            "encounters/a_mighty_boar/a_mighty_boar_trample"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "26"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "225"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "225"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "duration"   "5.50"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "50 55"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_force"   "2000"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two"   "50"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "burning_trail_damage"   "20"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "burning_trail_damage_duration"   "8"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "burning_trail_damage_interval"   "0.25"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "burning_trail_aoe"   "130"
+        }
+
+    }
+  }
+
+
+  "a_mighty_boar_falling_rocks"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "sniper_shrapnel"
+    "ScriptFile"            "encounters/a_mighty_boar/a_mighty_boar_falling_rocks"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "24"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "300"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "300"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "duration"   "3.0"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "88 96"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_duration"   "3.0"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.5"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_instances"   "6"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay_min"   "1.5"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay_max"   "3.5"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "stun"   "3.0"
+        }
+
+    }
+  }
+
+
+}

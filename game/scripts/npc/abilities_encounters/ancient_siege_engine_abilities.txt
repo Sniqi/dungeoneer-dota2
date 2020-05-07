@@ -1,0 +1,383 @@
+"DOTAAbilities"
+{
+  "ancient_siege_engine_multishot"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "ember_spirit_searing_chains"
+    "ScriptFile"            "encounters/ancient_siege_engine/ancient_siege_engine_multishot"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "7"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "125"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "125"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "30 36"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.50"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed"   "750"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two"   "50"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "burning_ground_damage"   "20 24"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "burning_ground_damage_duration"   "14"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "burning_ground_damage_interval"   "0.25"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "burning_ground_aoe"   "125"
+        }
+
+    }
+  }
+
+
+  "ancient_siege_engine_burning_wheels"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "invoker_chaos_meteor"
+    "ScriptFile"            "encounters/ancient_siege_engine/ancient_siege_engine_burning_wheels"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "30"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "125"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "125"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "8"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "34 38"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_duration"   "12"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.5"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "move_speed_absolute"   "500"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "move_speed_max"   "500"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two"   "50"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_move_speed_absolute"   "750"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_move_speed_max"   "750"
+        }
+        "11"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_burning_duration"   "24"
+        }
+
+    }
+  }
+
+
+  "ancient_siege_engine_shotgun"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "sniper_assassinate"
+    "ScriptFile"            "encounters/ancient_siege_engine/ancient_siege_engine_shotgun"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "11"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "650"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "50"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "650"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "50"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "45 50"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.60"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "bullets_count"   "7"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed"   "1600"
+        }
+
+    }
+  }
+
+
+  "ancient_siege_engine_earthen_spike"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "lion_impale"
+    "ScriptFile"            "encounters/ancient_siege_engine/ancient_siege_engine_earthen_spike"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "15"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "150"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "150"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "50"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "45 50"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.00"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_force"   "2000"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "push_damage"   "24 28"
+        }
+
+    }
+  }
+
+
+  "ancient_siege_engine_homing_missile"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "gyrocopter_homing_missile"
+    "ScriptFile"            "encounters/ancient_siege_engine/ancient_siege_engine_homing_missile"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "25"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "50"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "50"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "20"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "200"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_duration"   "1"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.1"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage_instances"   "10"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.00"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "missile_speed_start"   "0"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "missile_speed_end"   "800"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "missile_speed_up_duration"   "4.0"
+        }
+
+    }
+  }
+
+
+}

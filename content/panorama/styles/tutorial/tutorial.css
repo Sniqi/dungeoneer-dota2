@@ -1,0 +1,130 @@
+.TutorialsRoot
+{
+	width: 100%;
+	height: 100%;
+
+	z-index: 99;
+}
+
+#TutorialsPanel
+{
+	width: 83%;
+	height: 83%;
+	
+	horizontal-align: center;
+	vertical-align: center;
+	
+	background-image: url("file://{images}/custom_game/tutorial/tutorial.png"));
+	
+	border: 2px solid black;
+}
+
+#ButtonTutorials {
+ 	width: 76px;
+ 	height: 35px;
+	vertical-align: bottom;
+	horizontal-align: left;
+	margin-left: 5px;
+	margin-bottom: 85px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonTutorialsText {
+	color: white;
+	font-size: 15px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonTutorials:hover {
+	border: 1px solid #fff;
+}
+#ButtonTutorials:active {
+ 	border: 3px solid #fff;
+}
+
+
+#TutorialDescription_Items
+{
+	width: 8%;
+ 	height: 14%;
+	margin-left: 41%;
+	margin-top: 49%;
+	/*border: 3px solid #fff;*/
+}
+
+#TutorialDescription_Gold
+{
+	width: 10%;
+ 	height: 10%;
+	margin-left: 40%;
+	margin-top: 79%;
+	/*border: 3px solid #fff;*/
+}
+
+#TutorialDescription_Artifacts
+{
+	width: 14%;
+ 	height: 9%;
+	margin-left: 56%;
+	margin-top: 20%;
+	/*border: 3px solid #fff;*/
+}
+
+#TutorialDescription_Glyphs
+{
+	width: 9%;
+ 	height: 15%;
+	margin-left: 48%;
+	margin-top: 32%;
+	/*border: 3px solid #fff;*/
+}
+
+#TutorialDescription_DefeatedBosses
+{
+	width: 18%;
+ 	height: 30%;
+	margin-left: 64%;
+	margin-top: 37%;
+	/*border: 3px solid #fff;*/
+}
+
+#TutorialDescription_MapScore
+{
+	width: 18%;
+ 	height: 10%;
+	margin-left: 78%;
+	margin-top: 2%;
+	/*border: 3px solid #fff;*/
+}
+
+#TutorialDescription_HeroDeaths
+{
+	width: 16%;
+ 	height: 7%;
+	margin-left: 57%;
+	margin-top: 1%;
+	/*border: 3px solid #fff;*/
+}
+
+#TutorialDescription_Time
+{
+	width: 9%;
+ 	height: 7%;
+	margin-left: 64%;
+	margin-top: 9%;
+	/*border: 3px solid #fff;*/
+}
+
+#TutorialDescription_Retries
+{
+	width: 12%;
+ 	height: 7%;
+	margin-left: 83%;
+	margin-top: 37%;
+	/*border: 3px solid #fff;*/
+}

@@ -1,0 +1,37 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/checklist/checklist.css" />
+  </styles>
+
+  <scripts>
+    <include src="file://{resources}/scripts/checklist/checklist.js" />
+  </scripts>
+
+  <snippets>
+
+    <snippet name="ChecklistBox">
+    
+      <Panel class="ChecklistBox">
+
+        <Panel hittest="false" id="ChecklistBoxBackground">
+            <Image id="ChecklistPicture" src="" scaling="stretch-to-fit-preserve-aspect" />
+            <Label id="ChecklistTxt" text="Checklist"/>
+            <Image id="ChecklistCheckmarkPicture" src="" scaling="stretch-to-fit-preserve-aspect" />
+        </Panel>
+
+        <Label id="ChecklistValueAdjustment" text="done!"/>
+
+      </Panel>
+
+    </snippet>
+
+  </snippets>
+
+  <Panel class="ChecklistPickerRoot" hittest="false">
+    <Panel id="Checklists" hittest="false">
+      <Panel id="ChecklistBoxs" hittest="false"></Panel>
+    </Panel>
+  </Panel>
+
+</root>

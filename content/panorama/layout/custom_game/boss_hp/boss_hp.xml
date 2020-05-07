@@ -1,0 +1,57 @@
+<root>
+
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/boss_hp/boss_hp.css" />
+  </styles>
+  
+  <scripts>
+    <include src="file://{resources}/scripts/boss_hp/boss_hp.js" />
+  </scripts>
+  
+  <snippets>
+  
+	<snippet name="Boss_Hp">
+	
+	  <Panel class="Boss_Hp">
+
+		<Panel id="Boss_HpList">
+		
+			<Panel id="Boss_HpListEntry">
+				<Panel id="Background" />
+				<Label id="Boss_HpDescription" text="Boss" />
+				<Label id="Boss_HpProgress" text="0%" />
+			</Panel>
+		
+		</Panel>
+	  
+	  </Panel>
+	  
+	</snippet>
+	<!--
+	<snippet name="Cast">
+	
+	  <Panel class="Cast">
+
+		<Panel id="CastList">
+		
+			<Panel id="CastListEntry">
+				<DOTAAbilityImage id="CastAbility" abilityname="xxxxabilityNamexxx" />
+				<Panel id="CastBackground" />
+				<Label id="CastDescription" text="Ability 1" />
+				<Label id="CastProgress" text="2.0 / 2.0" />
+			</Panel>
+		
+		</Panel>
+	  
+	  </Panel>
+	  
+	</snippet>
+	-->
+  </snippets>
+  
+  <Panel class="Boss_HpRoot" hittest="false">
+	  <Panel id="Boss_Hps" hittest="false" />
+	  <!--<Panel id="Casts" hittest="false" />-->
+  </Panel>
+</root>

@@ -1,0 +1,53 @@
+"DOTAItems"
+{
+	//=================================================================================================================
+	// Artifact of Greater Knowledge
+	//=================================================================================================================
+	"item_artifact_of_greater_knowledge"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"3014"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_artifact_of_greater_knowledge"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"			"item_artifact_of_greater_knowledge"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		"ItemCost"						"18000"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemAliases"					"artifact of greater knowledge"
+		//"ItemStackable"					"1"
+		//"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		//"ItemCastOnPickup"				"1"
+		//"ItemInitialCharges"			"1"
+		//"ItemDisplayCharges"			"1"
+		//"ItemStockMax"					"1"
+		//"ItemStockInitial"				"0"
+		//"ItemStockTime"					"1"
+		//"ItemInitialStockTime"			"0"//"600"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		//"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ShouldBeSuggested"				"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"limit_per_hero"		"1"
+			}
+		}
+	}
+
+}

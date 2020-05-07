@@ -1,0 +1,19 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Zeus
+  //=================================================================================================================
+  "npc_dota_hero_silencer"
+  {
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+	//"Ability10"		"special_bonus_magic_resistance_15"		// Lvl 10, right - replaces xxx
+	//"Ability11"		"special_bonus_all_stats_6"				// Lvl 10, left - replaces
+	"Ability12"			"special_bonus_intelligence_15"			// Lvl 15, right - replaces special_bonus_gold_income_20
+	"Ability13"			"special_bonus_attack_damage_30"		// Lvl 15, left - replaces +2  Intelligence Steal
+	//"Ability14"		"special_bonus_unique_enchantress_3"	// Lvl 20, right - replaces xxx
+	//"Ability15"		"special_bonus_all_stats_20"			// Lvl 20, left - replaces xxx
+	//"Ability16"		"special_bonus_unique_enchantress_4"	// Lvl 25, right - replaces xxx
+	//"Ability17"		"special_bonus_unique_enchantress_5"	// Lvl 25, left - replaces xxx
+  }
+}

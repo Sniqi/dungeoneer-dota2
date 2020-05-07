@@ -1,0 +1,119 @@
+<root>
+
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/boss_info/boss_info.css" />
+  </styles>
+  
+  <scripts>
+    <include src="file://{resources}/scripts/boss_info/boss_info.js" />
+  </scripts>
+  
+  <snippets>
+  
+  	<!--
+	<snippet name="BossInfoList">
+	
+		<Panel class="BossInfoList" hittest="false">
+	
+			<Image id="BossInfoListBossImage" src="" />
+		
+		</Panel>
+	
+	</snippet>
+	-->
+
+	
+	<snippet name="BossInfoFrame">
+	
+		<Panel class="BossInfoFrame" hittest="false">
+		
+			<!--<Image id="BossInfoFrameBossImage" src="" hittest="false" />-->
+			<Label id="BossInfoFrameBossName" text="Stat" hittest="false" />
+			
+			<!--<DOTAScenePanel id="BossInfoFrameBossScene" unit="" hittest="false" />-->
+			<DOTAScenePanel id="BossInfoFrameBossScene" renderdeferred="false" particleonly="false" hittest="false" />
+
+			
+			<Label id="BossInfoFrameBossDescription" text="Description:" hittest="false" />
+			
+			<Label id="BossInfoFrameBossAbilities" text="Abilities" hittest="false" />
+			
+			<!--<Label id="BossInfoFrameBossItemDrops" text="Item Drops" hittest="false" />-->
+	  
+		</Panel>
+	  
+	</snippet>
+	
+	
+	<snippet name="BossInfoAbility">
+	
+		<Panel class="BossInfoAbility" hittest="false">
+	
+			<DOTAAbilityImage id="BossInfoAbilityImage" abilityname="" />
+
+		</Panel>
+		
+	</snippet>
+	
+	<!--
+	<snippet name="BossInfoItemDrop">
+	
+		<Panel class="BossInfoItemDrop" hittest="false">
+	
+			<DOTAItemImage id="BossInfoItemDropImage" itemname="" />
+			<Label id="BossInfoItemDropTxt" text="" hittest="false" />
+
+		</Panel>
+		
+	</snippet>
+	
+	
+	<snippet name="BossInfoChallenge">
+	
+		<Panel class="BossInfoChallenge" hittest="false">
+	
+			<Panel id="BossInfoChallengeLabelPanel" hittest="false">
+				<Label id="BossInfoChallengeLabel" text="Stat" hittest="false" />
+			</Panel>
+			<Panel id="BossInfoChallengeValuePanel" hittest="false">
+				<Label id="BossInfoChallengeValue" text="Value" hittest="false" />
+			</Panel>
+			
+		</Panel>
+		
+	</snippet>
+	-->
+
+  </snippets>
+  
+	<Panel class="BossInfoRoot" hittest="false">
+		
+		<Panel id="BossInfoListsWrap" hittest="false">
+			<Panel id="BossInfoLists">
+			</Panel>
+		</Panel>
+		<Panel id="BossInfoFrames" hittest="false">
+			<Panel id="BossInfoAbilities" hittest="false">
+			</Panel>
+			<!--
+			<Panel id="BossInfoItemDrops" hittest="false">
+			</Panel>
+			-->
+			<Button id="BossInfoRerollButton" onactivate="BossInfoRerollButtonActivate()">
+				<Label id="BossInfoRerollButtonText" text="Reroll" />
+			</Button>
+		</Panel>
+		<Button id="BossInfoButton" onactivate="BossInfoButtonActivate()">
+			<Label id="BossInfoButtonText" text="Boss Info" />
+		</Button>
+		<!--
+		<Button id="BossChallengeButton" onactivate="BossChallengeButtonActivate()" visible="false" enabled="false">
+			<Label id="BossChallengeButtonText" text="Boss Challenge" visible="false" enabled="false" />
+		</Button>
+		<Panel id="BossInfoChallenges" hittest="false" visible="false" enabled="false">
+		</Panel>
+		-->
+	</Panel>
+
+</root>

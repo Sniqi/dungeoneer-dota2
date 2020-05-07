@@ -1,0 +1,37 @@
+<root>
+
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/damagemeter/damagemeter.css" />
+  </styles>
+  
+  <scripts>
+    <include src="file://{resources}/scripts/damagemeter/damagemeter.js" />
+  </scripts>
+  
+  <snippets>
+  
+	<snippet name="Damagemeter">
+	
+	  <Panel class="Damagemeter">
+		<Panel id="BackgroundBar" />
+		<DOTAHeroImage id="DamagemeterIcon" heroname="" heroimagestyle="icon" />
+		<Label id="DamagemeterLabel" text="Stat" />
+		<Label id="DamagemeterValue" text="Value" />
+	  </Panel>
+	  
+	</snippet>
+	
+  </snippets>
+  
+  <Panel class="DamagemetersRoot" hittest="false" visible="false">
+  	  <Panel id="DamagemetersFrame" visible="false">
+		  <Panel id="Damagemeters" visible="false">
+		  </Panel>
+	  </Panel>
+	  <Button id="ButtonDamagemeters" onactivate="ButtonDamagemeters()" visible="false">
+		  <Label id="ButtonDamagemetersText" text="Damage" visible="false" />
+	  </Button>
+  </Panel>
+  
+</root>

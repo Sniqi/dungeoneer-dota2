@@ -1,0 +1,51 @@
+<root>
+
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/perks/active_perks.css" />
+  </styles>
+  
+  <scripts>
+    <include src="file://{resources}/scripts/perks/active_perks.js" />
+  </scripts>
+  
+  <snippets>
+  
+	<snippet name="ActivePerksPicker">
+	
+	  <Panel class="ActivePerksPicker" hittest="false">
+
+		<Panel id="ActivePerksList">
+		</Panel>
+	  </Panel>
+	</snippet>
+
+	<snippet name="ActivePerksButton">
+	
+		<Button class="ActivePerksButton">
+			<Label id="ActivePerksLabel" text="" hittest="false" />
+			<Image id="ActivePerksPicture" src="" scaling="stretch-to-fit-preserve-aspect" />
+		</Button>
+		
+	</snippet>
+
+	<snippet name="ActivePerksAbilityButton">
+	
+		<Button class="ActivePerksAbilityButton">
+			<Label id="ActivePerksAbilityLabel" text="" hittest="false" />
+			<Image id="ActivePerksAbilityPicture" src="" scaling="stretch-to-fit-preserve-aspect" />
+		</Button>
+		
+	</snippet>
+
+  </snippets>
+  
+  <Panel class="ActivePerksPickerRoot" hittest="false">
+		<Panel id="ActivePerkss" hittest="false">
+			<Panel id="ActivePerksButtons" hittest="false"></Panel>
+			<Panel id="ActivePerksAbilityButtons" hittest="false"></Panel>
+		</Panel>
+  </Panel>
+  
+
+</root>

@@ -1,0 +1,105 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Shiva's Guard 2
+  //=================================================================================================================
+  "item_recipe_shivas_guard_2"
+  {
+    "ID"                                                  "2607"    // unique ID
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemCost"                                            "3575"
+    "ItemShopTags"                                        ""
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_shivas_guard_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_shivas_guard"
+    }
+  }
+
+  //=================================================================================================================
+  // Shiva's Guard 2
+  //=================================================================================================================
+  "item_shivas_guard_2"
+  {
+    // General-----------------------------------------------------------------------------------------------------
+    "ID"                                                  "2608"    //Unique ID
+    "BaseClass"                                           "item_shivas_guard"
+    "AbilityTextureName"                                  "item_shivas_guard"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "FightRecapLevel"                                     "1"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    // Stats-------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"         "30 28 26"
+    "AbilityCastRange"        "900"
+
+    // Item Info---------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "100"
+    "ItemCost"                                            "8325"
+    "ItemShopTags"          "int;armor;hard_to_tag"
+    "ItemQuality"         "epic"
+    "ItemAliases"         "shiva's guard 2;shivas 2"
+    "ItemDisassembleRule"     "DOTA_ITEM_DISASSEMBLE_ALWAYS"
+    "ItemDeclarations"        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "ShouldBeSuggested"       "1"
+
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_shivas_guard;item_shivas_guard_2;item_shivas_guard_3"
+
+    // Special-----------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_intellect"   "30 45 60"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_armor"     "15 22 30"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "aura_radius"     "1200"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "aura_attack_speed"   "-45 -55 -65"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blast_damage"      "200 300 400"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blast_movement_speed"  "-40 -50 -60"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "blast_debuff_duration" "4.0"
+      }
+      "08"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blast_radius"      "900"
+      }
+      "09"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blast_speed"     "350"
+      }
+    }
+  }
+}

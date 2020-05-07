@@ -1,0 +1,314 @@
+.PerksPickerRoot
+{
+	width: 100%;
+	height: 100%;
+}
+
+/* Perks Picker Snippet */
+
+#Perkss
+{
+	width: 700px;
+	height: 770px;
+
+	border: 2px solid black;
+	/*background-color: gradient( linear, 0% 0%, 0% 100%, from( #fbfbfbff ), to( #c0c0c0c0 ) );*/
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+	
+	z-index: 0;
+
+	horizontal-align: center;
+	vertical-align: center;
+
+	margin-right: 0px;
+	margin-bottom: 150px;
+}
+
+.PerksPicker
+{
+	horizontal-align: center;
+
+	margin-left: 10px;
+}
+
+#PerksList
+{
+
+}
+
+#Headline
+{
+	color: white;
+	font-size: 50px;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+
+	horizontal-align: center;
+
+	margin-top: 0px;
+}
+
+#HeadlineBuy
+{
+	color: #00ff00;
+	font-size: 40px;
+	text-shadow: 3px 3px 4px 5.0 #333333b0;
+
+	horizontal-align: center;
+
+	margin-left: 25px;
+	margin-top: 70px;
+}
+
+#HeadlineUpgrade
+{
+	color: yellow;
+	font-size: 40px;
+	text-shadow: 3px 3px 4px 5.0 #333333b0;
+
+	horizontal-align: center;
+
+	margin-left: 25px;
+	margin-top: 375px;
+}
+
+/* Perks Button Snippet 
+
+flow-children: right;
+*/
+
+#PerksButtons
+{
+	margin-top: 110px;
+	horizontal-align: center;
+	z-index: 1;
+}
+
+#PerksButtonsUpgrade
+{
+	margin-top: 410px;
+	horizontal-align: center;
+	z-index: 1;
+}
+
+.PerksButton
+{
+	z-index: 2;
+}
+
+#PerksPicture
+{
+	width: 100px;
+	height: 100px;
+	
+	margin-left: 0px;
+
+	border: 2px solid black;
+	border-radius: 30% / 30%;
+	/*background-color: gradient( radial, 50% 50%, 0% 0%, 80% 80%, from( #ff5555ff ), to( #c5c5c5ff ) );*/
+	background-color: gradient( linear, 0% 0%, 100% 50%, from( #fbfbfbff ), to( #888888ff ) );
+	/*box-shadow: fill #000000FF 5px 5px 8px 0px;*/
+}
+
+#PerksPicture:hover
+{
+	/*box-shadow: #FFFFFF80 0px 0px 10px 0px;*/
+	border: 1px solid white;
+}
+/*
+#PerksPicture:active
+{
+	border: 3px solid white;
+}
+*/
+.PerksPictureDisabled
+{
+	opacity: 0.75;
+}
+
+#PerksLabel
+{
+	color: white;
+	font-size: 25px;
+	margin-top: 95px;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#PerksLevel {
+	horizontal-align: right;
+	vertical-align: bottom;
+
+	margin-right: 3px;
+	margin-bottom: -8px;
+	
+	/*border: 1px solid black;
+	border-radius: 40% / 40%;
+	box-shadow: fill #000000ff 2px 2px 8px 0px;*/
+}
+
+#PerksLevelText {
+	color: #cc4444;
+	font-size: 25px;
+	horizontal-align: center;
+	vertical-align: center;
+	
+	text-align: center;
+	text-shadow: 0px 0px 8px 5.0 #000000ff;
+}
+
+
+#Timer
+{
+	color: white;
+	font-size: 35px;
+	margin-left: 25px;
+	margin-bottom: 20px;
+	horizontal-align: left;
+	vertical-align: bottom;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ReplaceTxt
+{
+	color: white;
+	font-size: 20px;
+	margin-left: 0px;
+	margin-bottom: 75px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+
+/* ButtonContinue */
+
+#ButtonContinue {
+ 	width: 200px;
+ 	height: 50px;
+	horizontal-align: center;
+	vertical-align: bottom;
+
+	margin-bottom: 20px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonContinueText {
+	color: white;
+	font-size: 25px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonContinue:hover {
+	border: 1px solid #fff;
+}
+#ButtonContinue:active {
+ 	border: 3px solid #fff;
+}
+
+/* ButtonContinue End */
+
+
+
+/* ButtonReroll */
+
+#ButtonReroll {
+ 	width: 100px;
+ 	height: 25px;
+	horizontal-align: right;
+	vertical-align: bottom;
+
+	margin-right: 25px;
+	margin-bottom: 20px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonRerollText {
+	color: white;
+	font-size: 15px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonReroll:hover {
+	border: 1px solid #fff;
+}
+#ButtonReroll:active {
+ 	border: 3px solid #fff;
+}
+
+/* ButtonReroll End */
+
+/* ReplaceMessage */
+
+#ReplaceMessage
+{
+	width: 100%;
+	height: 100%;
+
+	border: 2px solid black;
+	box-shadow: fill #000000f0 2px 2px 8px 0px;
+	
+	z-index: 99;
+}
+#ReplaceMessageTxt
+{
+	color: white;
+	font-size: 40px;
+	horizontal-align: center;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 0px;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ReplaceMessageButton {
+ 	width: 200px;
+ 	height: 50px;
+	horizontal-align: center;
+	vertical-align: bottom;
+
+	margin-bottom: 20px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ReplaceMessageButtonTxt {
+	color: white;
+	font-size: 25px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ReplaceMessageButton:hover {
+	border: 1px solid #fff;
+}
+#ReplaceMessageButton:active {
+ 	border: 3px solid #fff;
+}
+
+/* ReplaceMessage End */
+
+#Help
+{
+	width: 32px;
+	height: 32px;
+	
+	vertical-align: top;
+	horizontal-align: right;
+
+	margin-top: 3px;
+	margin-right: 3px;
+}

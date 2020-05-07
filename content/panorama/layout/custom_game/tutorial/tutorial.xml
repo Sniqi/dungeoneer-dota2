@@ -1,0 +1,43 @@
+<root>
+
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/tutorial/tutorial.css" />
+	</styles>
+  
+	<scripts>
+		<include src="file://{resources}/scripts/tutorial/tutorial.js" />
+	</scripts>
+	
+	<snippets>
+
+		<snippet name="TutorialDescription">
+
+			<Panel class="TutorialDescription">
+				<Panel id="TutorialDescriptionFrame">
+				</Panel>
+			</Panel>
+			
+		</snippet>
+		
+	</snippets>
+
+	<Panel class="TutorialsRoot" hittest="false">
+		<Panel id="TutorialsPanel">
+			<Panel id="TutorialDescription_Items" />
+			<Panel id="TutorialDescription_Gold" />
+			<Panel id="TutorialDescription_Artifacts" />
+			<Panel id="TutorialDescription_Glyphs" />
+			<Panel id="TutorialDescription_DefeatedBosses" />
+			<Panel id="TutorialDescription_MapScore" />
+			<Panel id="TutorialDescription_HeroDeaths" />
+			<Panel id="TutorialDescription_Time" />
+			<Panel id="TutorialDescription_Retries" />
+		</Panel>
+		
+		<Button id="ButtonTutorials" onactivate="ButtonTutorials()">
+			<Label id="ButtonTutorialsText" text="Tutorial" />
+		</Button>
+	</Panel>
+
+</root>

@@ -1,0 +1,16 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Ursa
+  //=================================================================================================================
+  "npc_dota_hero_ursa"
+  {
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+    "Ability10"   "special_bonus_movement_speed_20" // replaces +3 Mana Regen
+	"Ability14"		"special_bonus_unique_ursa_5"
+	"Ability15"		"special_bonus_lifesteal_20" // replaces Enrage gains 80% Status Resistance
+	"Ability16"		"special_bonus_unique_ursa_3"
+	"Ability17"		"special_bonus_unique_ursa"
+  }
+}

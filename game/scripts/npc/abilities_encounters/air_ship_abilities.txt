@@ -1,0 +1,284 @@
+"DOTAAbilities"
+{
+  "air_ship_broadside"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "sniper_assassinate"
+    "ScriptFile"            "encounters/air_ship/air_ship_broadside"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "12"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "1500"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "150"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "1500"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "150"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "36 40"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "shots_max_hp"   "3"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "shots_min_hp"   "8"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay_max_hp"   "2.5"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay_min_hp"   "2.0"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay_shot_max_hp"   "0.8"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay_shot_min_hp"   "0.1"
+        }
+        "10"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "stun"   "2.0"
+        }
+        "11"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed"   "2000"
+        }
+
+    }
+  }
+
+
+  "air_ship_napalm_air_strike"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "phoenix_launch_fire_spirit"
+    "ScriptFile"            "encounters/air_ship/air_ship_napalm_air_strike"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "20"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "240"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "240"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "9 10"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "burn_damage"   "16 18"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "burn_damage_interval"   "0.5"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "3.0 2.5"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "initial_damage"   "40 44"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "initial_stun"   "1.6 2.0"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "move_speed_percentage"   "-30.0 -35.0"
+        }
+
+    }
+  }
+
+
+  "air_ship_high_tides"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "naga_siren_rip_tide"
+    "ScriptFile"            "encounters/air_ship/air_ship_high_tides"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "8"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "240"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "240"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "32 36"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.0 1.5"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "knockback"   "1250"
+        }
+
+    }
+  }
+
+
+  "air_ship_whirlpool"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "ancient_apparition_ice_vortex"
+    "ScriptFile"            "encounters/air_ship/air_ship_whirlpool"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "2"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "16"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "600"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "600"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "12 14"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "16 18"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.4"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "3 2"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "suck_in_force"   "0.7"
+        }
+
+    }
+  }
+
+
+}

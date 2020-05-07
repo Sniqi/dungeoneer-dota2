@@ -1,0 +1,30 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Ability: Jakiro's Dual Breath
+  //=================================================================================================================
+  "jakiro_dual_breath"
+  {
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "06"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "burn_damage"                                     "30 60 90 120"
+        "LinkedSpecialBonus"                              "special_bonus_unique_jakiro_2"
+      }
+      "07"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "slow_movement_speed_pct"                         "-10 -11 -12 -13"
+      }
+      "08"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "slow_attack_speed_pct"                           "-13 -16 -19 -21"
+      }
+    }
+  }
+}

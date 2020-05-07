@@ -1,0 +1,28 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Monkey King
+  //=================================================================================================================
+  "npc_dota_hero_monkey_king"
+  {
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+
+		"Ability1"		"monkey_king_boundless_strike" //monkey_king_tree_dance
+		"Ability2"		"monkey_king_jingu_mastery" //monkey_king_tree_dance
+		"Ability3"		"elder_titan_natural_order" //monkey_king_primal_spring
+		"Ability4"		"generic_hidden" //monkey_king_jingu_mastery
+		"Ability5"		"generic_hidden" //monkey_king_mischief
+		"Ability6"		"monkey_king_wukongs_command" //monkey_king_wukongs_command
+		"Ability7"		"" //monkey_king_primal_spring_early
+		"Ability8"		"" //monkey_king_untransform
+		"Ability10"		"special_bonus_hp_300" // replaces special_bonus_unique_monkey_king_5
+
+		"Ability12"		"special_bonus_movement_speed_35" // replaces special_bonus_unique_monkey_king_7
+
+
+		"Ability15"		"special_bonus_all_stats_15" // replaces special_bonus_unique_monkey_king_3
+
+
+  }
+}

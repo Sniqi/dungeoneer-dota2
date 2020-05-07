@@ -1,0 +1,274 @@
+"DOTAAbilities"
+{
+  "stikx_the_gentleman_golden_explosions"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "invoker_sun_strike"
+    "ScriptFile"            "encounters/stikx_the_gentleman/stikx_the_gentleman_golden_explosions"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "10"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "125 130 135"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "125 130 135"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "30 33 36"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay_min"   "1.2"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay_max"   "3.6"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "count_min"   "4"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "count_max"   "10"
+        }
+
+    }
+  }
+
+
+  "stikx_the_gentleman_expensive_treasure_bombs"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "neutral_spell_immunity"
+    "ScriptFile"            "encounters/stikx_the_gentleman/stikx_the_gentleman_expensive_treasure_bombs"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "20"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "475"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "475"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "9"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "54 58 62"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay_min"   "3.00"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay_max"   "9.00"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "minion_move_speed"   "200"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "minion_count"   "6"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay_explosion"   "1"
+        }
+
+    }
+  }
+
+
+  "stikx_the_gentleman_mega_coin"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PURE"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "alchemist_goblins_greed"
+    "ScriptFile"            "encounters/stikx_the_gentleman/stikx_the_gentleman_mega_coin"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "22"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "1500"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "1500"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "99"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.15"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "coin_spawn_distance"   "800"
+        }
+
+    }
+  }
+
+
+  "stikx_the_gentleman_swath_of_destruction"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "greevil_purification"
+    "ScriptFile"            "encounters/stikx_the_gentleman/stikx_the_gentleman_swath_of_destruction"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "3"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "26"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "80.00"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "AoERadius"   "80.00"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "36"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "25 28 31"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_duration"   "36.00"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.5"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "2"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "source_move_speed"   "80"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "source_damage_percentage"   "60 65 70"
+        }
+        "09"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "source_damage_interval"   "0.1"
+        }
+
+    }
+  }
+
+
+}

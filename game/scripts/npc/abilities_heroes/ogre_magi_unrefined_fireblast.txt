@@ -1,0 +1,36 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Ogre Magi: Unrefined Fireblast ( scepter ability )
+  //=================================================================================================================
+  "ogre_magi_unrefined_fireblast"
+  {
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"      "FIELD_FLOAT"
+        "stun_duration"   "0.0"
+      }
+
+      "02"
+      {
+        "var_type"      "FIELD_FLOAT"
+        "multicast_delay" "0.1"
+      }
+
+      "03"
+      {
+        "var_type"      "FIELD_FLOAT"
+        "scepter_mana"    "0.04"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "fireblast_damage"    "400"
+      }
+    }
+  }
+}

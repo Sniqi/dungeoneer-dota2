@@ -1,0 +1,1763 @@
+#base "heroes/lone_druid_bear.txt"
+
+"DOTAUnits"
+{
+    "dummy"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/development/invisiblebox.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.0"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "5.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "1000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "2000"         // Base mana.
+        "StatusManaRegen"           "400"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_GOODGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "3000"      // Range of vision during day light.
+        "VisionNighttimeRange"      "3000"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "the_purger"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/creeps/neutral_creeps/n_creep_satyr_spawn_a/n_creep_satyr_spawn_b.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.0"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "5.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "10000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "2000"         // Base mana.
+        "StatusManaRegen"           "400"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_GOODGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "3000"      // Range of vision during day light.
+        "VisionNighttimeRange"      "3000"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "red_dragonking_warrior"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/creeps/neutral_creeps/n_creep_dragonspawn_b/n_creep_dragonspawn_b.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "0.8"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"           "12"         // Damage range min.
+        "AttackDamageMax"           "12"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "3000"       // Range within a target can be acquired.
+        "AttackRange"               "150"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "140"         // Speed
+        "MovementTurnRate"          "0.6"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "200"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "2000"         // Base mana.
+        "StatusManaRegen"           "400"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "3000"      // Range of vision during day light.
+        "VisionNighttimeRange"      "3000"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+
+    "npc_dota_hero_bhamuka_all_consuming_god_tentacle"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_hero_broodmother" // Class of entity of link to.
+        "Model"                     "models/development/invisiblebox.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.0"
+
+        //"ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"        "bhamuka_all_consuming_god_consume_the_weak"
+        "Ability2"        "bhamuka_all_consuming_god_consume_the_ground"
+        "Ability3"        "bhamuka_all_consuming_god_consume_souls"
+        "Ability4"        "bhamuka_all_consuming_god_soul_beam"
+        "Ability5"        "bhamuka_all_consuming_god_tentacle_sweep"
+        "Ability6"        "bhamuka_all_consuming_god_malignant_growth"
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "20"         // Physical protection.
+        "MagicalResistance"             "35"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_HUGE"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "50"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "5.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "900"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "2000"         // Base mana.
+        "StatusManaRegen"           "400"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_GOODGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "3000"      // Range of vision during day light.
+        "VisionNighttimeRange"      "3000"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+
+    "consume_the_weak"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/development/invisiblebox.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.0"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "5.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "30"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "2000"         // Base mana.
+        "StatusManaRegen"           "400"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "3000"      // Range of vision during day light.
+        "VisionNighttimeRange"      "3000"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "lesser_lava_elemental"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/heroes/invoker/forge_spirit.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "0.65"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"           "4"         // Damage range min.
+        "AttackDamageMax"           "4"        // Damage range max.
+        "AttackRate"                "1.5"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "3000"       // Range within a target can be acquired.
+        "AttackRange"               "150"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "350"         // Speed
+        "MovementTurnRate"          "0.5"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "85"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "3000"      // Range of vision during day light.
+        "VisionNighttimeRange"      "3000"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "three_shell_game"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/development/invisiblebox.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.0"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "5.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "10"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "0"         // Base mana.
+        "StatusManaRegen"           "0"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_GOODGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "3000"      // Range of vision during day light.
+        "VisionNighttimeRange"      "3000"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "seed_of_corruption"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/items/furion/treant/shroomling_treant/shroomling_treant.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.5"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "5.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "70"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "0"      // Range of vision during day light.
+        "VisionNighttimeRange"      "0"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "expensive_treasure_bombs"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/courier/lockjaw/lockjaw.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.4"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "200"         // Speed
+        "MovementTurnRate"          "5.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "1000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "0"      // Range of vision during day light.
+        "VisionNighttimeRange"      "0"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "swath_of_destruction"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/development/invisiblebox.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.0"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "50"         // Speed
+        "MovementTurnRate"          "5.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "1000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "0"      // Range of vision during day light.
+        "VisionNighttimeRange"      "0"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "ancient_siege_engine_earthen_spike"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/development/invisiblebox.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.0"
+
+        //"ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_HUGE"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "1.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "1000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "0"      // Range of vision during day light.
+        "VisionNighttimeRange"      "0"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "ancient_siege_engine_homing_missile"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/heroes/gyro/gyro_missile.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.0"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "1.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "1000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "0"      // Range of vision during day light.
+        "VisionNighttimeRange"      "0"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "wind_harpy_thorny_blockage"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/development/invisiblebox.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.0"
+
+        //"ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_FILLER"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "1.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "1000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "0"      // Range of vision during day light.
+        "VisionNighttimeRange"      "0"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "iron_claw_chicken"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/props_gameplay/chicken.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.25"
+
+        //"ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "1.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "1000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "0"      // Range of vision during day light.
+        "VisionNighttimeRange"      "0"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "npc_dota_hero_structures_of_xunra_linked_obelisks"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_hero_broodmother" // Class of entity of link to.
+        "Model"                     "models/heroes/undying/undying_tower.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.25"
+
+        //"ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  "structures_of_xunra_obelisk_summon_unholy_army"          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_HUGE"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "1.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "330"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "2000"         // Base mana.
+        "StatusManaRegen"           "200"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "0"      // Range of vision during day light.
+        "VisionNighttimeRange"      "0"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "structures_of_xunra_obelisk_summon_unholy_warrior"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.3"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  "structures_of_xunra_unholy_warrior_cleave"          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "8"         // Physical protection.
+        "MagicalResistance"             "25"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"           "3"         // Damage range min.
+        "AttackDamageMax"           "3"        // Damage range max.
+        "AttackRate"                "2.0"       // Speed of attack.
+        "AttackAnimationPoint"      "0.5"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "600"       // Range within a target can be acquired.
+        "AttackRange"               "125"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "300"         // Speed
+        "MovementTurnRate"          "0.5"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "100"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "500"      // Range of vision during day light.
+        "VisionNighttimeRange"      "500"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "structures_of_xunra_obelisk_summon_unholy_archer"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/heroes/clinkz/clinkz_archer.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.3"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  "structures_of_xunra_unholy_archer_concentrated_arrow"          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "5"         // Physical protection.
+        "MagicalResistance"             "15"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+        "AttackDamageMin"           "5"         // Damage range min.
+        "AttackDamageMax"           "5"        // Damage range max.
+        "AttackRate"                "2.4"       // Speed of attack.
+        "AttackAnimationPoint"      "0.5"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "600"       // Range within a target can be acquired.
+        "AttackRange"               "900"       // Range within a target can be attacked.
+        "ProjectileModel"           "particles/items2_fx/necronomicon_archer_projectile.vpcf" // Particle system model for projectile.
+        "ProjectileSpeed"           "1200"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "200"         // Speed
+        "MovementTurnRate"          "0.5"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "60"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "500"      // Range of vision during day light.
+        "VisionNighttimeRange"      "500"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "structures_of_xunra_obelisk_summon_unholy_warlock"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/creeps/lane_creeps/creep_bad_ranged/lane_dire_ranged_mega.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.4"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  "structures_of_xunra_unholy_warlock_transfer_energy"          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "2"         // Physical protection.
+        "MagicalResistance"             "40"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+        "AttackDamageMin"           "3"         // Damage range min.
+        "AttackDamageMax"           "3"        // Damage range max.
+        "AttackRate"                "6.0"       // Speed of attack.
+        "AttackAnimationPoint"      "0.5"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "600"       // Range within a target can be acquired.
+        "AttackRange"               "900"       // Range within a target can be attacked.
+        "ProjectileModel"           "particles/units/heroes/hero_bane/bane_projectile.vpcf" // Particle system model for projectile.
+        "ProjectileSpeed"           "600"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "260"         // Speed
+        "MovementTurnRate"          "0.5"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "75"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "2500"         // Base mana.
+        "StatusManaRegen"           "250"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "500"      // Range of vision during day light.
+        "VisionNighttimeRange"      "500"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "sinastra_turret"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/items/rattletrap/warmachine_cog_dc/warmachine_cog_dc.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "2.0"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  "sinastra_fire_turret"          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "0.5"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "600"       // Range within a target can be acquired.
+        "AttackRange"               "600"       // Range within a target can be attacked.
+        //"ProjectileModel"           "" // Particle system model for projectile.
+        //"ProjectileSpeed"           "600"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "0.5"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "100"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "0"         // Base mana.
+        "StatusManaRegen"           "0"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_GOODGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "500"      // Range of vision during day light.
+        "VisionNighttimeRange"      "500"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "sinastra_dragon_swarm"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/courier/baby_winter_wyvern/baby_winter_wyvern_flying.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.25"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "0.5"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "600"       // Range within a target can be acquired.
+        "AttackRange"               "600"       // Range within a target can be attacked.
+        //"ProjectileModel"           "" // Particle system model for projectile.
+        //"ProjectileSpeed"           "600"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "0.5"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "1000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "0"         // Base mana.
+        "StatusManaRegen"           "0"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_GOODGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "3000"      // Range of vision during day light.
+        "VisionNighttimeRange"      "3000"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "samurai_of_chaos_slowest_death_kitty"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "models/items/juggernaut/ward/fortunes_tout/fortunes_tout.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.4"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "200"         // Speed
+        "MovementTurnRate"          "5.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "1000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "0"      // Range of vision during day light.
+        "VisionNighttimeRange"      "0"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+    "elite_royal_guardian_linked_pillars_of_frost"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
+        "Model"                     "maps/cavern_assets/models/statues/statue_cavern.vmdl" // Model.
+        "Level"                     "1"
+        "ModelScale"                "1.0"
+
+        "ConsideredHero"            "1"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                  ""          // Ability 1.
+        "Ability2"                  ""          // Ability 2.
+        "Ability3"                  ""          // Ability 3.
+        "Ability4"                  ""          // Ability 4.
+        "Ability5"                  ""          // Ability 5.
+        "Ability6"                  ""          // Ability 6.
+        "Ability7"                  ""          // Ability 7.
+        "Ability8"                  ""          // Ability 8.
+        "Ability9"                  ""          // Ability 9.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"             "0"         // Physical protection.
+        "MagicalResistance"             "0"         // Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"           "0"         // Damage range min.
+        "AttackDamageMax"           "0"        // Damage range max.
+        "AttackRate"                "1.0"       // Speed of attack.
+        "AttackAnimationPoint"      "1.0"       // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "0"       // Range within a target can be acquired.
+        "AttackRange"               "0"       // Range within a target can be attacked.
+        //"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf" // Particle system model for projectile.
+        //"ProjectileSpeed"           "1900"      // Speed of projectile.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_REGULAR"            // Hull type used for navigation/locomotion.
+        "HealthBarOffset"           "150"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"           // Type of locomotion - ground, air
+        "MovementSpeed"             "100"         // Speed
+        "MovementTurnRate"          "5.0"       // Turning rate.
+        
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                  "0"        // Experience earn.
+        "BountyGoldMin"             "0"        // Gold earned min.
+        "BountyGoldMax"             "0"        // Gold earned max.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"              "1000"        // Base health.
+        "StatusHealthRegen"         "0"      // Health regeneration rate.
+        "StatusMana"                "250"         // Base mana.
+        "StatusManaRegen"           "25"         // Mana regeneration rate.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "0"      // Range of vision during day light.
+        "VisionNighttimeRange"      "0"       // Range of vision at night time.
+
+        //Inventory
+        "HasInventory"              "0"
+    }
+
+}

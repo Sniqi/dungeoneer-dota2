@@ -1,0 +1,27 @@
+"DOTAAbilities"
+{
+"viper_viper_strike"
+  {
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "damage"                                          "90 150 220"
+        "LinkedSpecialBonus"                              "special_bonus_unique_viper_2"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_movement_speed"                            "-8 -10 -12 -14"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_attack_speed"                              "-12 -16 -20 -24"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Sven
+  //=================================================================================================================
+  "npc_dota_hero_sven"
+  {
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+    "Ability11"   "special_bonus_attack_speed_15" // replaces +3 Mana Regen
+    "Ability13"   "special_bonus_cooldown_reduction_20" // replaces Storm Hammer Dispels Enemies
+    "Ability17"   "special_bonus_all_stats_20" // replaces +1.25s Storm Hammer Storm Hammer Stun Duration
+  }
+}

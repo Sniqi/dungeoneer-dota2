@@ -1,0 +1,45 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Abaddon: Frostmourne
+  //=================================================================================================================
+  "abaddon_frostmourne"
+  {
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "slow_duration"       "8"
+      }
+      "02"
+      {
+        "var_type"          "FIELD_INTEGER"
+        "movement_speed"        "1 2 3 4"
+      }
+      "03"
+      {
+        "var_type"          "FIELD_INTEGER"
+        "hit_count"       "6"
+      }
+      "04"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "curse_duration"        "1"
+      }
+      "05"
+      {
+        "var_type"          "FIELD_INTEGER"
+        "curse_slow"        "4 5 6 7"
+      }
+      "06"
+      {
+        "var_type"            "FIELD_INTEGER"
+        "curse_attack_speed"      "160 240 320 400"
+        "LinkedSpecialBonus"      "special_bonus_unique_abaddon_3"
+      }
+    }
+  }
+}

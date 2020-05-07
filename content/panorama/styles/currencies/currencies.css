@@ -1,0 +1,77 @@
+.CurrenciesPickerRoot
+{
+    width: 100%;
+    height: 100%;
+}
+
+#Currenciess
+{
+    width: 100%;
+    height: 100%;
+}
+
+#CurrenciesBoxs
+{
+    width: 480px;
+    height: 65px;
+
+    margin-bottom: 85px;
+    margin-left: 85px;
+
+    horizontal-align: left;
+    vertical-align: bottom;
+
+    flow-children: right;
+}
+
+.CurrenciesBox
+{
+    vertical-align: top;
+}
+
+#CurrenciesBoxBackground
+{
+    width: 235px;
+    height: 35px;
+    background-color: black;
+    opacity: 0.6;
+
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+#CurrenciesBoxBackground Label
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#CurrenciesPicture
+{
+    width: 30px;
+    height: 30px;
+    
+    margin-top: 0px;
+    margin-left: 2px;
+}
+
+#CurrenciesTxt
+{
+    margin-top: 6px;
+    margin-left: 35px;
+    text-align: left;
+	color: white;
+}
+
+#CurrenciesValueAdjustment
+{
+    margin-top: 0px;
+    margin-left: 150px;
+    text-align: left;
+	color: white;
+	
+	font-size: 32px;
+    font-weight: bold;
+
+    z-index: 100;
+}

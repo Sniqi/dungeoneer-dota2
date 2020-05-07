@@ -1,0 +1,24 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/timer/timer.css" />
+  </styles>
+
+  <scripts>
+    <include src="file://{resources}/scripts/timer/timer.js" />
+  </scripts>
+
+  <Panel hittest="false" class="BaseHud">
+
+    <Panel hittest="false" class="Clip">
+
+      <Panel hittest="false" id="Timer_Box">
+          <Label id="Timer_Txt" text="Fight Countdown:"/>
+          <Label id="Timer_Value" text="00:45"/>
+      </Panel>
+
+    </Panel>
+
+  </Panel>
+
+</root>

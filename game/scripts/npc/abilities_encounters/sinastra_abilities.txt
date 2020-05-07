@@ -1,0 +1,377 @@
+"DOTAAbilities"
+{
+  "sinastra_flying_creature"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	//"AbilityUnitDamageType"  ""
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "winter_wyvern_arctic_burn"
+    "ScriptFile"            "encounters/sinastra/sinastra_flying_creature"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "1000"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "300"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "300"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "phase_two_percentage"   "50"
+        }
+
+    }
+  }
+
+
+  "sinastra_fire_turret"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "storm_spirit_ball_lightning"
+    "ScriptFile"            "encounters/sinastra/sinastra_fire_turret"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "8"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "80"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.6"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "turret_damage_percentage"   "12.5"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "turret_range"   "3600"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "turret_aoe_radius"   "200"
+        }
+
+    }
+  }
+
+
+  "sinastra_frosty_breath"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "ancient_apparition_chilling_touch"
+    "ScriptFile"            "encounters/sinastra/sinastra_frosty_breath"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "8"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "800"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "200"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "800"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "200"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "12"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "35"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay"   "3"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "move_speed_percentage"   "-30.0"
+        }
+
+    }
+  }
+
+
+  "sinastra_cold_presence"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "winter_wyvern_cold_embrace"
+    "ScriptFile"            "encounters/sinastra/sinastra_cold_presence"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "1000"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	//"AoERadius"              ""
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage"   "1.8"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "damage_interval"   "0.5"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "move_speed_percentage"   "-10.0"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "no_movement_duration"   "4.5"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "ice_block_duration"   "4.5"
+        }
+
+    }
+  }
+
+
+  "sinastra_ice_shard_barrage"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "crystal_maiden_freezing_field"
+    "ScriptFile"            "encounters/sinastra/sinastra_ice_shard_barrage"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "24"
+    "AbilityManaCost"        "0"
+    "AbilityCastRange"       "4000"
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "275"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AbilityCastRange"   "4000"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "275"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "6"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "35"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "2.75"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "interval"   "1.0"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "root_duration"   "3.0"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "projectile_speed"   "475"
+        }
+
+    }
+  }
+
+
+  "sinastra_dragon_swarm"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	//"AbilityUnitTargetType" ""
+	//"AbilityUnitTargetTeam" ""
+	"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+    "BaseClass"             "ability_lua"
+    "AbilityTextureName"    "winter_wyvern_winters_curse"
+    "ScriptFile"            "encounters/sinastra/sinastra_dragon_swarm"
+	
+	"AnimationPlaybackRate"         ""
+	"AnimationIgnoresModelScale"    "0"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxLevel"               "1"
+    "RequiredLevel"          "1"
+    "LevelsBetweenUpgrades"  "1"
+    "AbilityCastPoint"       "0.0"
+    "AbilityCooldown"        "12"
+    "AbilityManaCost"        "0"
+    //"AbilityCastRange"       ""
+	"AbilityCastRangeBuffer" "150"
+	//"AbilityChannelTime"     ""
+    //"AbilityCastAnimation"   ""
+	"AoERadius"              "200"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "AoERadius"   "200"
+        }
+        "02"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "duration"   "84"
+        }
+        "03"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "damage"   "58"
+        }
+        "04"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "delay"   "1.25"
+        }
+        "05"
+        {
+            "var_type"   "FIELD_FLOAT"
+            "move_speed_percentage"   "-30.0"
+        }
+        "06"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "debuff_duration"   "12"
+        }
+        "07"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay_between_attacks_min"   "8"
+        }
+        "08"
+        {
+            "var_type"   "FIELD_INTEGER"
+            "delay_between_attacks_max"   "12"
+        }
+
+    }
+  }
+
+
+}

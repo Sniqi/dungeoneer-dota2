@@ -1,0 +1,52 @@
+<root>
+
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/gamemode/gamemode.css" />
+  </styles>
+  
+  <scripts>
+    <include src="file://{resources}/scripts/gamemode/gamemode.js" />
+  </scripts>
+  
+  <snippets>
+  
+	<snippet name="GameModePicker">
+	
+	  <Panel class="GameModePicker">
+
+		<Panel id="GameModeList">
+			<Label id="GameModeListCaption" text="Common GameModes" />
+		</Panel>
+	  </Panel>
+	</snippet>
+
+	<snippet name="GameModeButton">
+	
+		<Button class="GameModeButton">
+			<Image id="GameModePicture" src="" scaling="stretch-to-fit-preserve-aspect" />
+			<Panel id="GameModeLevel">
+				<Label id="GameModeLevelText" text="0" />
+			</Panel>
+		</Button>
+		
+	</snippet>
+
+  </snippets>
+  
+  <Panel class="GameModePickerRoot">
+		<Image id="Background" />
+		<Panel id="GameModes">
+			<Panel id="GameModeButtons"></Panel>
+		</Panel>
+		<Label id="Timer" text="" />
+		<Button id="ButtonLock" onactivate="ButtonLockActivate()">
+			<Label id="ButtonLockText" text="Lock" />
+		</Button>
+		<Button id="ButtonSkip" onactivate="ButtonSkipActivate()" visible="false" enabled="false">
+			<Label id="ButtonSkipText" text="Skip (0)" visible="false" enabled="false" />
+		</Button>
+  </Panel>
+  
+
+</root>

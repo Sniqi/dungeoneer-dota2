@@ -1,0 +1,40 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Medusa: Mystic Snake
+  //=================================================================================================================
+  "medusa_mystic_snake"
+  {
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "snake_damage"      "90 180 270 360"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "snake_mana_steal"    "11 14 17 20"
+        "LinkedSpecialBonus"      "special_bonus_unique_medusa_3"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "snake_scale"     "10"
+      }
+      "09"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "stone_form_scepter_base"   "0.0"
+      }
+      "10"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "stone_form_scepter_increment"    "0.0"
+      }
+    }
+  }
+}

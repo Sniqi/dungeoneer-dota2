@@ -1,0 +1,46 @@
+<root>
+
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/gamemode/submode_classic.css" />
+  </styles>
+  
+  <scripts>
+    <include src="file://{resources}/scripts/gamemode/submode_classic.js" />
+  </scripts>
+
+  <Panel class="SubMode_ClassicPickerRoot">
+		<Image id="Background" />
+		<Label id="SubMode_ClassicCaption" text="Options for Classic Mode" />
+		<Panel id="SubMode_Classics">
+			<Panel id="SubMode_ClassicButtons"></Panel>
+		</Panel>
+
+		<ToggleButton id="ToggleCasual" checked="false" text="" onactivate="ToggleCasual()" onmouseover="ToggleCasualShowTooltip()" onmouseout="ToggleCasualHideTooltip()">
+			<Label id="ToggleCasualText" text="Casual Mode" />
+		</ToggleButton>
+		<ToggleButton id="ToggleEndless" checked="false" text="" onactivate="ToggleEndless()" onmouseover="ToggleEndlessShowTooltip()" onmouseout="ToggleEndlessHideTooltip()">
+			<Label id="ToggleEndlessText" text="Endless Mode" />
+		</ToggleButton>
+
+		<Label id="DifficultyDescriptionText" text="Difficulty Multiplier" />
+		<Label id="DifficultyText" text="1.0" />
+		<Button id="ButtonIncreaseDifficulty" onactivate="ButtonIncreaseDifficulty()">
+			<Label id="ButtonIncreaseDifficultyText" text="+" />
+		</Button>
+		<Button id="ButtonDecreaseDifficulty" onactivate="ButtonDecreaseDifficulty()">
+			<Label id="ButtonDecreaseDifficultyText" text="-" />
+		</Button>
+
+		<Label id="Timer" text="" />
+		<Button id="ButtonLock" onactivate="ButtonLockActivate()">
+			<Label id="ButtonLockText" text="Lock" />
+		</Button>
+
+		<Label id="OtherPlayersText" text="The Host is setting up the Classic Mode options.." />
+
+		<Image id="Help" visible="false" src="file://{images}/custom_game/misc/help.png" scaling="stretch-to-fit-preserve-aspect" onmouseover="HelpTooltipShow()" onmouseout="HelpTooltipHide()" />
+  </Panel>
+  
+
+</root>

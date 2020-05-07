@@ -1,0 +1,15 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Warlock
+  //=================================================================================================================
+  "npc_dota_hero_warlock"
+  {
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+	  "Ability3"		"shadow_demon_shadow_poison"
+    "Ability4"    "shadow_demon_shadow_poison_release"
+    "Ability16"   "special_bonus_unique_shadow_demon_4"//"special_bonus_unique_warlock_2"
+    "Ability17"   "special_bonus_unique_shadow_demon_3"//"special_bonus_unique_warlock_1"
+  }
+}

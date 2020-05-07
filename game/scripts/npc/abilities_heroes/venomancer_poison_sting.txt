@@ -1,0 +1,27 @@
+"DOTAAbilities"
+{
+"venomancer_poison_sting"
+  {
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "damage"                                          "12 28 44 60"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "movement_speed"                                  "-1 -2 -3 -4"
+        "LinkedSpecialBonus"                              "special_bonus_unique_venomancer_2"
+      }
+      "04"
+      {
+        "var_type"          "FIELD_INTEGER"
+        "hp_regen_reduction"    "0"
+      }
+    }
+  }
+}

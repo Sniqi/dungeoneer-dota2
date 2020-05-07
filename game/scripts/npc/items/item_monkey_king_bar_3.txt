@@ -1,0 +1,80 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar 3
+  //=================================================================================================================
+  "item_recipe_monkey_king_bar_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2550"                            // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "3150"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_monkey_king_bar_3"
+    "ItemRequirements"
+    {
+      "01"                                                "item_monkey_king_bar_2"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar 3
+  //=================================================================================================================
+  "item_monkey_king_bar_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2551"                            // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                                           "item_monkey_king_bar"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "item_monkey_king_bar"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "10475"
+    "ItemShopTags"                                        "damage;attack_speed;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "mkb 3;monkey king bar 3"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+    "UpgradesItems"                                       "item_monkey_king_bar;item_monkey_king_bar_2;item_monkey_king_bar_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_damage"      "52 78 104"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_attack_speed"  "10 15 20"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_chance"      "75"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_chance_damage"     "100 150 200"
+      }
+    }
+  }
+}

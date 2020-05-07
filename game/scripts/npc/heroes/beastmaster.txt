@@ -1,0 +1,18 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Beastmaster
+  //=================================================================================================================
+  "npc_dota_hero_beastmaster"
+  {
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+	//"Ability1"		"beastmaster_wild_axes"
+	//"Ability2"		"beastmaster_call_of_the_wild_boar"
+	"Ability3"		"beastmaster_inner_beast" // beastmaster_call_of_the_wild_hawk
+	"Ability4"		"generic_hidden" // beastmaster_inner_beast
+	//"Ability5"		"generic_hidden"
+	//"Ability6"		"beastmaster_primal_roar"
+    "Ability17"   "special_bonus_attack_speed_50" // replaces -20s Hawks Cooldown
+  }
+}

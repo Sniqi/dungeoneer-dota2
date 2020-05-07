@@ -1,0 +1,77 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Desolator 2
+  //=================================================================================================================
+  "item_recipe_desolator_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2516"                            // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"                                  "item_recipe"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "2650"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_desolator_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_desolator"
+    }
+  }
+
+  //=================================================================================================================
+  // Desolator 2
+  //=================================================================================================================
+  "item_desolator_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "2517"                            // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                                           "item_desolator"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "item_desolator"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "6125"
+    "ItemShopTags"                                        "damage;unique"
+    "ItemQuality"                                         "artifact"
+    "ItemAliases"                                         "desolator 2;deso 2"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_desolator;item_desolator_2;item_desolator_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_damage"      "50 75 100"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "corruption_armor"    "-4 -5 -6"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "corruption_duration" "6.0"
+      }
+    }
+  }
+}

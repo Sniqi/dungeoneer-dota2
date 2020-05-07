@@ -1,0 +1,136 @@
+.ContinuePickerRoot
+{
+	width: 600px;
+	height: 200px;
+	
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+#ContinuePicker
+{
+	width: 100%;
+	height: 100%;
+
+	border: 2px solid black;
+	/*background-color: gradient( linear, 0% 0%, 0% 100%, from( #fbfbfbff ), to( #c0c0c0c0 ) );*/
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+	
+	z-index: 0;
+}
+
+#ContinueText {
+	color: #cc4444;
+	font-size: 40px;
+
+	margin-top: 20px;
+
+	horizontal-align: center;
+	vertical-align: top;
+	
+	text-align: center;
+	text-shadow: 0px 0px 8px 5.0 #000000ff;
+}
+
+
+#Timer
+{
+	color: white;
+	font-size: 40px;
+
+	margin-top: 20px;
+	margin-left: 250px;
+
+	horizontal-align: center;
+	vertical-align: top;
+	
+	text-align: center;
+	text-shadow: 0px 0px 8px 5.0 #000000ff;
+}
+
+
+/* ButtonContinue */
+
+#ButtonContinue {
+	width: 225px;
+	height: 70px;
+	horizontal-align: center;
+	vertical-align: bottom;
+
+	margin-left: -122.5px;
+	margin-bottom: 35px;
+
+	padding-top: 1px;
+	padding-bottom: 1px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonContinueText {
+	color: white;
+	font-size: 25px;
+
+	margin-top: 5px;
+	vertical-align: top;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonContinueCostText {
+	color: white;
+	font-size: 18px;
+
+	margin-bottom: 5px;
+	vertical-align: bottom;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonContinue:hover {
+	border: 1px solid #fff;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+#ButtonContinue:active {
+ 	border: 3px solid #fff;
+ 	padding-top: 0px;
+ 	padding-bottom: 0px;
+}
+
+/* ButtonContinue End */
+
+/* ButtonEnd */
+
+#ButtonEnd {
+ 	width: 225px;
+ 	height: 70px;
+	horizontal-align: center;
+	vertical-align: bottom;
+
+	margin-left: 225px;
+	margin-bottom: 35px;
+	
+	border: 2px solid black;
+	box-shadow: fill #00000080 2px 2px 8px 0px;
+}
+
+#ButtonEndText {
+	color: white;
+	font-size: 25px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	text-shadow: 1px 1px 4px 5.0 #333333b0;
+}
+
+#ButtonEnd:hover {
+	border: 1px solid #fff;
+}
+#ButtonEnd:active {
+ 	border: 3px solid #fff;
+}
+
+/* ButtonEnd End */

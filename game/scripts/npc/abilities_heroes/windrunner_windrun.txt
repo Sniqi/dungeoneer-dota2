@@ -1,0 +1,17 @@
+"DOTAAbilities"
+{
+"windrunner_windrun"
+  {
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "enemy_movespeed_bonus_pct"                       "-8 -10 -12 -14"
+        "LinkedSpecialBonus"    "special_bonus_unique_windranger_2"
+      }
+    }
+  }
+}

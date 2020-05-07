@@ -1,0 +1,45 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/loot_overview/loot_overview.css" />
+  </styles>
+
+  <scripts>
+    <include src="file://{resources}/scripts/loot_overview/loot_overview.js" />
+  </scripts>
+
+  <snippets>
+
+    <snippet name="LootOverviewLine">
+    
+      <Panel class="LootOverviewLine" hittest="false">
+
+        <Label id="LootOverviewBox_Currency_Descr" text="Gold:"/>
+        <Label id="LootOverviewBox_Currency_Value" text="+0"/>
+        <Image id="LootOverviewBox_Currency_Pic" src="" scaling="stretch-to-fit-preserve-aspect" />
+        <Label id="LootOverviewBox_Currency_Multiplier" text="x1.0"/>
+        <Label id="LootOverviewBox_Currency_Value_Total" text="+0"/>
+        <Image id="LootOverviewBox_Currency_Pic_Total" src="" scaling="stretch-to-fit-preserve-aspect" />
+        <Button id="LootOverviewBox_Currency_Empower_Button">
+          <Label id="LootOverviewBox_Currency_Empower_Button_Txt" text="0" />
+          <Image id="LootOverviewBox_Currency_Empower_Button_Pic" src="" scaling="stretch-to-fit-preserve-aspect" />
+        </Button>
+        <Label id="LootOverviewBox_Currency_Empower_Multiplier_Txt" text="+0%"/>
+
+      </Panel>
+
+    </snippet>
+
+  </snippets>
+
+  <Panel class="LootOverviewPickerRoot" hittest="false">
+    <Panel id="LootOverviews" hittest="false" >
+      <Panel id="LootOverviewLines" hittest="false"></Panel>
+      <Button id="ButtonLock" onactivate="ButtonLockActivate()">
+        <Label id="ButtonLockText" text="Continue" />
+      </Button>
+      <Label id="Timer" text="30s" />
+    </Panel>
+  </Panel>
+
+</root>

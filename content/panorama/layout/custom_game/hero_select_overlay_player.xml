@@ -1,0 +1,10 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+  		<include src="file://{resources}/styles/hero_select_overlay.css" />
+	</styles>
+	<Panel hittest="false" class="HeroSelectPlayerRoot">
+		<Image id="PlayerPortrait" />
+		<Label id="PlayerName" />
+	</Panel>
+</root>

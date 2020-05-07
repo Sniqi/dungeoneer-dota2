@@ -1,0 +1,62 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Satanic
+  //=================================================================================================================
+  "item_recipe_satanic"
+  {
+  }
+
+  //=================================================================================================================
+  // Satanic
+  //=================================================================================================================
+  "item_satanic"
+  {
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_satanic;item_satanic_2;item_satanic_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_strength"    "25 38 50"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_damage"      "25 38 50"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "lifesteal_percent"   "1"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "unholy_lifesteal_percent"  "19"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "unholy_lifesteal_total_tooltip"  "20"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "unholy_duration"   "5.0 6.0 7.0"
+      }
+      "08"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "status_resistance"     "15"
+      }
+    }
+  }
+}

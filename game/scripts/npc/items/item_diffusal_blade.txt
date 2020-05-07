@@ -1,0 +1,77 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Diffusal Blade
+  //=================================================================================================================
+  "item_recipe_diffusal_blade"
+  {
+  }
+
+  //=================================================================================================================
+  // Diffusal Blade
+  //=================================================================================================================
+  "item_diffusal_blade"
+  {
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_diffusal_blade;item_diffusal_blade_2;item_diffusal_blade_3"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agility"			"20 30 40"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"10 15 20"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"feedback_mana_burn"	"50 75 100"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"feedback_mana_burn_illusion_melee"	"16"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"feedback_mana_burn_illusion_ranged"	"8"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"purge_rate"			"5"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"purge_root_duration"	"3.0"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"purge_slow_duration"	"4.0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_per_burn"		"0.8"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cast_range_tooltip"		"600"
+			}
+		}
+  }
+}

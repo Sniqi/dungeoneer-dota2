@@ -1,0 +1,26 @@
+"DOTAAbilities"
+{
+"venomancer_venomous_gale"
+  {
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "strike_damage"                                   "40 60 80 120"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "tick_damage"                                     "15 60 105 150"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "movement_slow"                                   "-15 -15 -15 -15"
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+"DOTAItems"
+{
+  //=================================================================================================================
+  // Recipe: Ethereal Blade
+  //=================================================================================================================
+  "item_recipe_ethereal_blade"
+  {
+  }
+
+  //=================================================================================================================
+  // Ethereal Blade
+  //=================================================================================================================
+  "item_ethereal_blade"
+  {
+    // Upgrade Info
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_ethereal_blade;item_ethereal_blade_2;item_ethereal_blade_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_agility"     "40 60 80"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_strength"    "10 15 20"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_intellect"   "10 15 20"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blast_movement_slow" "-80"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "duration"        "4.0"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "blast_agility_multiplier"      "2.0 2.25 2.5"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blast_damage_base"     "75 112 150"
+      }
+      "08"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "duration_ally"       "4.0"
+      }
+      "09"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "ethereal_damage_bonus" "-40 -45 -50"
+      }
+      "10"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "projectile_speed"  "1275"
+      }
+      "11"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "tooltip_range"     "800"
+      }
+    }
+  }
+}
