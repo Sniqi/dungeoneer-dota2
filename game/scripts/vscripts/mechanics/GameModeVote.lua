@@ -1,6 +1,6 @@
 -- CONSTANTS
 
-local DEBUG_FAST_START = true
+local DEBUG_FAST_START = false
 local DEBUG_FAST_START_MODE = "Classic"
 
 local GAME_MODES = {}
@@ -333,7 +333,6 @@ function GameModeVote_ClassicSubMode()
 	end)
 
 	CustomGameEventManager:Send_ServerToAllClients("on_change_game_phase_submode_classicpicker", { phase="pick" } )
-
 	for playerID=1,4 do
 		local player = PlayerResource:GetPlayer(playerID)
 		CustomGameEventManager:Send_ServerToPlayer(player, "submode_classic_nonhost", nil )

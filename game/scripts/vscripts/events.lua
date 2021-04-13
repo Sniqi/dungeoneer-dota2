@@ -449,6 +449,7 @@ function GameMode:OnEntityKilled( keys )
       ENCOUNTER_FIGHTS[ GetRound() .. "_" .. EncounterTries ]["deaths"] = ENCOUNTER_FIGHTS[ GetRound() .. "_" .. EncounterTries ]["deaths"] + 1
     end
   end
+  
 end
 
 

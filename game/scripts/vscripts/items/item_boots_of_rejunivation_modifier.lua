@@ -90,7 +90,7 @@ function item_boots_of_rejunivation_modifier:OnIntervalThink()
 
 	self:SetStackCount(attr)
 
-	caster:CalculateStatBonus()
+	caster:CalculateStatBonus(false)
 
 end
 

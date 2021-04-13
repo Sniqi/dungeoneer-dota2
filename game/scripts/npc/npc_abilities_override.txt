@@ -114,6 +114,7 @@
 #base "abilities_items/orchid.txt"
 #base "abilities_items/solar_crest.txt"
 
+
 "DOTAAbilities"
 {
 	"item_clarity"							"REMOVE"
@@ -126,7 +127,7 @@
 	"item_ward_observer"					"REMOVE"
 	"item_ward_sentry"						"REMOVE"
 	"item_courier"							"REMOVE"
-	"item_tpscroll"							"REMOVE"
+	//"item_tpscroll"						"REMOVE" //causes crash since 7.29, after a hero dies
 	"item_power_treads"						"REMOVE"
 	"item_phase_boots"						"REMOVE"
 	"item_travel_boots"						"REMOVE"
@@ -135,14 +136,14 @@
 	"item_guardian_greaves"					"REMOVE"
 	"item_recipe_hand_of_midas"				"REMOVE"
 	"item_hand_of_midas"					"REMOVE"
-	"item_flying_courier"					"REMOVE"
+	//"item_flying_courier"					"REMOVE" //causes crash since 7.29, after a hero dies
 	"item_recipe_rapier"					"REMOVE"
 	"item_rapier"							"REMOVE"
 	"item_recipe_helm_of_the_dominator"		"REMOVE"
 	"item_helm_of_the_dominator"			"REMOVE"
 	"item_smoke_of_deceit"					"REMOVE"
-	"item_recipe_travel_boots_2"			"REMOVE"  
-	"item_travel_boots_2"					"REMOVE"  
+	"item_recipe_travel_boots_2"			"REMOVE"
+	"item_travel_boots_2"					"REMOVE"
 	"item_tome_of_knowledge"				"REMOVE"
 	"item_gem"								"REMOVE"
 	"item_spirit_vessel"					"REMOVE"

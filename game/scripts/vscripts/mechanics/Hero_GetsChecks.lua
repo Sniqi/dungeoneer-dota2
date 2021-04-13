@@ -3,7 +3,14 @@ function GetPlayerCount() --returns int
 end
 
 function GetPlayerCountConnected() --returns int
-	return PlayerResource:GetTeamPlayerCount()
+	local count = 0
+	for i,hero in pairs(HeroEntities) do
+		if PlayerResource:GetConnectionState(hero:GetPlayerOwnerID()) == DOTA_CONNECTION_STATE_CONNECTED then
+			count = count + 1
+		end
+	end
+	return count
+	--return PlayerResource:GetNumConnectedHumanPlayers() --DEPRECATED: PlayerResource:GetTeamPlayerCount()
 end
 
 function CheckHeroesAlive() --returns bool

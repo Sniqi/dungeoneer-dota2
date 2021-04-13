@@ -38,7 +38,7 @@ TOP_BAR_VISIBLE = false                  -- Should we display the top bar score/
 SHOW_KILLS_ON_TOPBAR = false             -- Should we display kills only on the top bar? (No denies, suicides, kills by neutrals)  Requires USE_CUSTOM_TOP_BAR_VALUES
 
 ENABLE_TOWER_BACKDOOR_PROTECTION = false-- Should we enable backdoor protection for our towers?
-REMOVE_ILLUSIONS_ON_DEATH = false       -- Should we remove all illusions if the main hero dies?
+REMOVE_ILLUSIONS_ON_DEATH = true        -- Should we remove all illusions if the main hero dies?
 DISABLE_GOLD_SOUNDS = false             -- Should we disable the gold sound when players get gold?
 
 END_GAME_ON_KILLS = false                -- Should the game end after a certain number of kills?
@@ -92,7 +92,7 @@ ENABLED_RUNES[DOTA_RUNE_INVISIBILITY] = false
 ENABLED_RUNES[DOTA_RUNE_REGENERATION] = false
 ENABLED_RUNES[DOTA_RUNE_BOUNTY] = false
 ENABLED_RUNES[DOTA_RUNE_ARCANE] = false
-
+ENABLED_RUNES[DOTA_RUNE_WATER] = false
 
 MAX_NUMBER_OF_TEAMS = 1                -- How many potential teams can be in this game mode?
 USE_CUSTOM_TEAM_COLORS = false           -- Should we use custom team colors?

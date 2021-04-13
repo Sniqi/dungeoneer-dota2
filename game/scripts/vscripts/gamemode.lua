@@ -221,6 +221,7 @@ function GameMode:OnHeroInGame(unit)
 			end
 		end)
 
+		-- Add to HeroEntities --
 		delay = delay + RandomFloat(0.0, delayAdded)
 		Timers:CreateTimer(delay, function()
 			if not unit:IsTempestDouble() then
@@ -295,6 +296,16 @@ function GameMode:OnHeroInGame(unit)
 			end
 		end)
 
+		-- This project has been abandoned - thanks for playing! --
+		--[[
+		delay = delay + RandomFloat(0.0, delayAdded)
+		Timers:CreateTimer(delay, function()
+			if not unit:IsTempestDouble() then
+				Notifications:TopToAll({text="This project has been abandoned - thanks for playing!", duration=10.0, style={color="rgb(200, 32, 32)", ["font-size"]="40px", ["text-shadow"]="1px 1px 4px 5.0 #333333b0"}, continue=false})
+			end
+		end)
+		]]
+		
 		-- #### DEBUG #### DEBUG #### DEBUG #### DEBUG #### DEBUG #### --
 		-- #### DEBUG #### DEBUG #### DEBUG #### DEBUG #### DEBUG #### --
 		-- #### DEBUG #### DEBUG #### DEBUG #### DEBUG #### DEBUG #### --

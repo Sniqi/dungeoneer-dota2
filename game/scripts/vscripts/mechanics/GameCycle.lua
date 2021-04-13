@@ -3,7 +3,7 @@
 -- ## DEBUG ## --
 
 local encount-- = "Bhamuka, All-Consuming God"
-local encount_do_nothing = false
+local encount_do_nothing = true
 
 -- ## Encounters ## --
 
